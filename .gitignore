@@ -1,0 +1,31 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+
+# Local environment files
+.env
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Optional: coverage reports (if using testing tools)
+coverage/
+
+# Optional: local output folders (e.g. screenshots, debug output)
+*.local
+output/
+
+# Optional: TypeScript cache
+*.tsbuildinfo

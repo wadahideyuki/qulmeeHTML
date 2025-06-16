@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="content-script-type" content="text/javascript" />
+  <meta http-equiv="content-script-type" content="text/css" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+  <title>通勤費Web</title>
+  <!-- OGs-->
+  <!-- /OGs-->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;900&amp;display=swap"
+    rel="stylesheet" type="text/css" media="all" />
+
+</head>
+
+<body>
+  <div class="sp-content">
+    {{> header}}
+
+    <main class="l-content">
+      <article class="main-block">
+        <video src="{{imagePath}}/movie.mp4" muted autoplay loop="true" playsinline></video>
+        <h1 class="logo"><img src="{{imagePath}}/logo.svg" alt=""></h1>
+      </article>
+
+    </main>
+    {{> footer}}
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

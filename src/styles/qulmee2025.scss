@@ -1,0 +1,13 @@
+@charset "UTF-8";
+$spDesign: 390;
+$vw: 100vw;
+@function vw($suuji) {
+  @return ($suuji / $spDesign) * 100vw;
+}
+@mixin mq {
+	@media screen and (max-width: 767px) {
+		@content;
+	}
+}
+@import "main";
+
