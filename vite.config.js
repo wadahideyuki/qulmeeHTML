@@ -43,7 +43,6 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: path.resolve(__dirname, "index.html"),
-        equipment: path.resolve(__dirname, "hoge/index.html"),
         // map: path.resolve(__dirname, "equipment/map.html"),
         // payment: path.resolve(__dirname, "payment/index.html"),
         // login: path.resolve(__dirname, "login/index.html"),
