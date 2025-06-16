@@ -12,5 +12,25 @@ $vw: 100vw;
 
 .qulmee{
 @import "main";
+@import "about";
+@import "case";
+@import "cta";
+@import "faq";
+@import "flow";
+@import "main";
+@import "merit";
+@import "news";
+@import "point";
+@import "price";
+@import "solution";
+@import "trial";
+@import "school";
+}
 
+
+h2.title{
+	.en{
+		display: block;
+	}
+	.jp{}
 }
