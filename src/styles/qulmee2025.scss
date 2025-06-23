@@ -25,6 +25,16 @@ $vw: 100vw;
 @import "solution";
 @import "trial";
 @import "school";
+
+.header{
+	height: 60px;
+	box-shadow: none;
+	.menuBtn{
+		display: none;
+	}
+	.gNav{
+		display: none;
+	}
 }
 
 
@@ -41,4 +51,23 @@ h2.title{
 		font-size: 44px;
 		color: #050000;
 	}
+}
+
+.u-button{
+	display: flex;
+	width: 292px;
+	height: 48px;
+	font-size: 18px;
+	box-shadow:0px 3px 6px rgba(0, 0, 0, 0.16);
+	border-radius: 100px;
+	align-items: center;
+	justify-content: center;
+	border: 3px solid #FF9149;
+	background-color: #FF9149;
+	color: #FFF;
+	&.download{
+		background-color: #FFF;
+		color: #FF9149;
+	}
+}
 }
