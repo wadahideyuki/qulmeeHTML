@@ -310,6 +310,7 @@
   position: absolute;
   left: -60px;
   color: #0093FF;
+  font-size: 26px;
 }
 @media screen and (max-width: 767px) {
   .qulmee .faq-block .qa-list .qa-box .q-item::before {
@@ -354,6 +355,7 @@
   position: absolute;
   left: -60px;
   color: #F88F00;
+  font-size: 26px;
 }
 @media screen and (max-width: 767px) {
   .qulmee .faq-block .qa-list .qa-box .a-item::before {

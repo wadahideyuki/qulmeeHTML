@@ -36,6 +36,7 @@
                     position: absolute;
                     left: -60px;
                     color: #0093FF;
+                    font-size: 26px;
                     @include mq{
                         font-size: vw(20);
                         top: -10%;
@@ -74,6 +75,7 @@
                     position: absolute;
                     left: -60px;
                     color: #F88F00;
+                    font-size: 26px;
                     @include mq{
                         font-size: vw(20);
                         top: -4%;
