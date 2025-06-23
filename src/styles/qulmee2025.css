@@ -1013,8 +1013,112 @@
     font-size: 4.1025641026vw;
   }
 }
-.qulmee .main-block {
-  color: red;
+.qulmee .merit-block .teacher {
+  background-image: url("/assets/img/merit/bg-txt1.svg");
+  background-repeat: no-repeat;
+  background-position: left 20px;
+  background-color: #E9F6FF;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .merit-block .teacher {
+    background-size: 100% auto;
+  }
+}
+.qulmee .merit-block .student {
+  background-image: url("/assets/img/merit/bg-txt2.svg");
+  background-repeat: no-repeat;
+  background-position: left 20px;
+  background-color: #FFFEFC;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .merit-block .student {
+    background-size: 100% auto;
+  }
+}
+.qulmee .merit-block .student .title .en {
+  color: #F88F00;
+}
+.qulmee .merit-block .student .title .en:before {
+  background-color: #F88F00;
+}
+.qulmee .merit-block .inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 170px 25px;
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .merit-block .inner {
+    flex-direction: column;
+    padding: 25.641025641vw 6.4102564103vw;
+  }
+}
+.qulmee .merit-block .inner .title {
+  text-align: left;
+  width: 30%;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .merit-block .inner .title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10.2564102564vw;
+  }
+}
+.qulmee .merit-block .inner .title img {
+  width: 100%;
+  max-width: 260px;
+  margin: 30px 0 0 20px;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .merit-block .inner .title img {
+    width: 28.2051282051vw;
+    margin: 0;
+  }
+}
+.qulmee .merit-block .inner .merit-list {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10% 5%;
+  margin-top: 40px;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .merit-block .inner .merit-list {
+    margin: 0;
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 12.8205128205vw;
+  }
+}
+.qulmee .merit-block .inner .merit-list img {
+  border-radius: 20px;
+  overflow: hidden;
+}
+.qulmee .merit-block .inner .merit-list dt {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 0.8em 0 0.6em;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .merit-block .inner .merit-list dt {
+    font-size: 5.1282051282vw;
+  }
+}
+.qulmee .merit-block .inner .merit-list dd {
+  margin: 0;
+  line-height: 1.7;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .merit-block .inner .merit-list dd {
+    font-size: 4.1025641026vw;
+  }
+}
+.qulmee .merit-block .inner .merit-list dd .small {
+  display: block;
+  font-size: 12px;
+  color: #888888;
 }
 .qulmee .news-block {
   padding: 180px 25px 110px;

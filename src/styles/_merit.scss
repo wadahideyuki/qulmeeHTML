@@ -1,3 +1,96 @@
-.main-block{
-    color: red;
+.merit-block{
+    .teacher{
+      background-image: url($pathImg + "merit/bg-txt1.svg");
+      background-repeat: no-repeat;
+      background-position: left 20px;
+      background-color: #E9F6FF;
+      @include mq{
+        background-size: 100% auto;
+      }
+    }
+    .student{
+      background-image: url($pathImg + "merit/bg-txt2.svg");
+      background-repeat: no-repeat;
+      background-position: left 20px;
+      background-color: #FFFEFC;
+      @include mq{
+        background-size: 100% auto;
+      }
+      .title{
+        .en{
+          color: #F88F00;
+          &:before{
+            background-color: #F88F00;
+          }
+        }
+      }
+    }
+    .inner{
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 170px 25px;
+        display: flex;
+        @include mq{
+          flex-direction: column;
+          padding: vw(100) vw(25);
+        }
+        .title{
+            text-align: left;
+            width: 30%;
+            @include mq{
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-bottom: vw(40);
+            }
+            img{
+              width: 100%;
+              max-width: 260px;
+              margin: 30px 0 0 20px;
+              @include mq{
+                width: vw(110);
+                margin: 0;
+              }
+            }
+        }
+        .merit-list{
+            width: 70%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap:10%  5%;
+            margin-top: 40px;
+            @include mq{
+              margin: 0;
+              grid-template-columns: 1fr;
+              width: 100%;
+              gap: vw(50);
+            }
+            img{
+              border-radius: 20px;
+              overflow: hidden;
+            }
+            dt{
+              font-size: 26px;
+              font-weight: bold;
+              margin: .8em 0 .6em;
+              @include mq{
+                font-size: vw(20);
+              }
+            }
+            dd{
+              margin: 0;
+              line-height: 1.7;
+              @include mq{
+                font-size: vw(16);
+              }
+              .small{
+                display: block;
+                font-size: 12px;
+                color: #888888;
+              }
+            }
+        }
+    }
+
 }
