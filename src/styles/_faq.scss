@@ -34,12 +34,14 @@
                 &::before{
                     content: "Q";
                     position: absolute;
+                    top: 15%;
                     left: -60px;
                     color: #0093FF;
                     font-size: 26px;
+                    line-height: 1;
                     @include mq{
                         font-size: vw(20);
-                        top: -10%;
+                        top: 8%;
                         left: -10%;
                     }
                 }
@@ -73,13 +75,15 @@
                 &::before{
                     content: "A";
                     position: absolute;
+                    top: 8%;
                     left: -60px;
                     color: #F88F00;
                     font-size: 26px;
+                    line-height: 1;
                     @include mq{
                         font-size: vw(20);
-                        top: -4%;
-                        left: -10%;
+                        top: 3%;
+                        left: -9%;
                     }
                 }
             }

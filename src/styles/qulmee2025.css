@@ -308,14 +308,16 @@
 .qulmee .faq-block .qa-list .qa-box .q-item::before {
   content: "Q";
   position: absolute;
+  top: 15%;
   left: -60px;
   color: #0093FF;
   font-size: 26px;
+  line-height: 1;
 }
 @media screen and (max-width: 767px) {
   .qulmee .faq-block .qa-list .qa-box .q-item::before {
     font-size: 5.1282051282vw;
-    top: -10%;
+    top: 8%;
     left: -10%;
   }
 }
@@ -324,12 +326,9 @@
   display: inline-block;
   width: 15px;
   height: 24px;
-  -webkit-mask-image: url(/assets/img/faq/icon-close.svg);
-          mask-image: url(/assets/img/faq/icon-close.svg);
-  -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
-  -webkit-mask-size: contain;
-          mask-size: contain;
+  mask-image: url(/assets/img/faq/icon-close.svg);
+  mask-repeat: no-repeat;
+  mask-size: contain;
   background-color: #EAEAEA;
   position: absolute;
   right: -60px;
@@ -356,15 +355,17 @@
 .qulmee .faq-block .qa-list .qa-box .a-item::before {
   content: "A";
   position: absolute;
+  top: 8%;
   left: -60px;
   color: #F88F00;
   font-size: 26px;
+  line-height: 1;
 }
 @media screen and (max-width: 767px) {
   .qulmee .faq-block .qa-list .qa-box .a-item::before {
     font-size: 5.1282051282vw;
-    top: -4%;
-    left: -10%;
+    top: 3%;
+    left: -9%;
   }
 }
 .qulmee .faq-block .qa-list .open-qa {
@@ -791,12 +792,9 @@
   width: 25px;
   height: 18px;
   margin-right: 10px;
-  -webkit-mask-image: url("/assets/img/title-detail.svg");
-          mask-image: url("/assets/img/title-detail.svg");
-  -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
-  -webkit-mask-size: contain;
-          mask-size: contain;
+  mask-image: url("/assets/img/title-detail.svg");
+  mask-repeat: no-repeat;
+  mask-size: contain;
   background-color: #49b2f4;
 }
 @media screen and (max-width: 767px) {
