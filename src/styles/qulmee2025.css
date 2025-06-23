@@ -1223,8 +1223,229 @@
     font-size: 3.5897435897vw;
   }
 }
-.qulmee .main-block {
-  color: red;
+.qulmee .point-block {
+  padding: 170px 25px 150px;
+  background-image: url("/assets/img//point/bg.svg");
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .point-block {
+    padding: 20.5128205128vw 6.4102564103vw;
+  }
+}
+.qulmee .point-block .point-list {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  gap: 130px;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .point-block .point-list {
+    gap: 11.5384615385vw;
+  }
+}
+.qulmee .point-block .point-list li {
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.6;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .point-block .point-list li {
+    flex-direction: column;
+  }
+}
+.qulmee .point-block .point-list li .text {
+  width: 53%;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .point-block .point-list li .text {
+    width: 100%;
+  }
+}
+.qulmee .point-block .point-list li .text h3 {
+  font-size: 30px;
+  position: relative;
+  margin-bottom: 0.7em;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .point-block .point-list li .text h3 {
+    font-size: 5.1282051282vw;
+  }
+}
+.qulmee .point-block .point-list li .text h3:before {
+  content: "";
+  width: 19px;
+  height: 19px;
+  border-radius: 0 20px 20px 0;
+  position: absolute;
+  left: -0.5em;
+  top: -0.4em;
+  background-color: #60b5ff;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .point-block .point-list li .text h3:before {
+    top: -0.8em;
+  }
+}
+@media screen and (max-width: 767px) {
+  .qulmee .point-block .point-list li .text p {
+    font-size: 4.1025641026vw;
+  }
+}
+.qulmee .point-block .point-list li .img {
+  width: 40%;
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .point-block .point-list li .img {
+    width: 100%;
+    margin-top: 2.5641025641vw;
+  }
+}
+.qulmee .point-block .point-list li .img .ph {
+  position: relative;
+  z-index: 2;
+}
+.qulmee .point-block .point-list li .img .num {
+  position: absolute;
+  right: -170px;
+  top: 30px;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .point-block .point-list li .img .num {
+    display: none;
+  }
+}
+.qulmee .point-block .box {
+  border-radius: 40px;
+  background-color: #e5f4ff;
+  padding: clamp(3vw, 110px, 5vw);
+  max-width: 1600px;
+  margin: 195px auto 0 auto;
+  width: 100%;
+  font-weight: bold;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .point-block .box {
+    width: 100vw;
+    margin: 10.2564102564vw -6.4102564103vw;
+    padding-bottom: 12.8205128205vw;
+  }
+}
+.qulmee .point-block .box .box-top {
+  display: flex;
+  line-height: 1.7;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .point-block .box .box-top {
+    flex-direction: column-reverse;
+  }
+}
+.qulmee .point-block .box .box-top h3 {
+  font-size: 36px;
+  margin-bottom: 0.5em;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .point-block .box .box-top h3 {
+    font-size: 5.1282051282vw;
+  }
+}
+.qulmee .point-block .box .box-top .text {
+  width: 40%;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .point-block .box .box-top .text {
+    width: 100%;
+    font-size: 4.1025641026vw;
+  }
+}
+.qulmee .point-block .box .box-top .text strong {
+  font-size: 26px;
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .point-block .box .box-top .text strong {
+    font-size: 5.1282051282vw;
+  }
+}
+.qulmee .point-block .box .box-top .img {
+  width: 60%;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .point-block .box .box-top .img {
+    width: 100%;
+  }
+}
+.qulmee .point-block .box .box-bottom {
+  background-color: #fff;
+  border-radius: 20px;
+  line-height: 1.7;
+  display: flex;
+  padding: 45px 45px 45px 28%;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1280px) {
+  .qulmee .point-block .box .box-bottom {
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 300px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .qulmee .point-block .box .box-bottom {
+    flex-direction: column;
+    padding: 0 6.4102564103vw 6.4102564103vw 6.4102564103vw;
+    margin-top: 5.1282051282vw;
+  }
+}
+.qulmee .point-block .box .box-bottom p {
+  margin: 0;
+  font-size: 25px;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .point-block .box .box-bottom p {
+    font-size: 4.6153846154vw;
+  }
+}
+.qulmee .point-block .box .box-bottom .img {
+  position: absolute;
+  bottom: 20px;
+  left: 5%;
+  width: 20%;
+  min-width: 200px;
+}
+@media (max-width: 1280px) {
+  .qulmee .point-block .box .box-bottom .img {
+    bottom: auto;
+    top: 50%;
+    margin-top: -5vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .qulmee .point-block .box .box-bottom .img {
+    position: static;
+    margin-top: -30px;
+  }
+}
+.qulmee .point-block .box .box-bottom .u-button {
+  height: 57px;
+  background-color: #60b5ff;
+  border: 0;
+  padding: 0 2em;
+  justify-content: space-between;
+}
+.qulmee .point-block .box .box-bottom .u-button:after {
+  content: "";
+  width: 0.7em;
+  height: 0.7em;
+  display: inline-block;
+  transform: rotate(-45deg);
+  border-right: 4px solid #fff;
+  border-bottom: 4px solid #fff;
 }
 .qulmee .price-block {
   padding: 215px 25px 155px 25px;
