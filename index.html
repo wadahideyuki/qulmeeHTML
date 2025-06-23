@@ -75,22 +75,36 @@
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TJ4T2M" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  <div class="wrapper container"> {{> header}}
-    <section class="main-block">{{> main}}</section>
-    <section class="main-block">{{> news}}</section>
-    <section class="main-block">{{> about}}</section>
-    <section class="main-block">{{> merit}}</section>
-    <section class="main-block">{{> point}}</section>
-    <section class="main-block">{{> school}}</section>
-    <section class="main-block">{{> flow}}</section>
-    <section class="main-block">{{> price}}</section>
-    <section class="faq-block">{{> faq}}</section>
-    <section class="main-block">{{> case}}</section>
-    <section class="main-block">{{> cta}}</section>
-    <section class="main-block">{{> solution}}</section>
-    <section class="main-block">{{> trial}}</section>
-    {{> footer}}
-  </div><!--wrapper-->
+  <div class="wrapper container"> {{> header}} <main class="qulmee-content">
+      <section class="main-block">{{> main}}</section>
+      <nav class="nav-qulmee">
+        <div class="logo"><img src="{{imagePath}}/main/logo_w.svg" alt=""></div>
+        <ul>
+          <li><a href="#section1">Qulmeeとは</a></li>
+          <li><a href="#section2">導入メリット</a></li>
+          <li><a href="#section3">選ばれる理由</a></li>
+          <li><a href="#section4">事例</a></li>
+          <li><a href="#section5">導入の流れ・サポート</a></li>
+          <li><a href="#section6">よくあるご質問</a></li>
+        </ul>
+        <div class="btns">
+          <a href="" class="u-button white">無料トライアル</a>
+          <a href="" class="u-button bd">資料ダウンロード</a>
+        </div>
+      </nav>
+      <section class="main-block">{{> news}}</section>
+      <section class="main-block">{{> about}}</section>
+      <section class="main-block">{{> merit}}</section>
+      <section class="main-block">{{> point}}</section>
+      <section class="main-block">{{> school}}</section>
+      <section class="main-block">{{> flow}}</section>
+      <section class="main-block">{{> price}}</section>
+      <section class="faq-block">{{> faq}}</section>
+      <section class="main-block">{{> case}}</section>
+      <section class="main-block">{{> cta}}</section>
+      <section class="main-block">{{> solution}}</section>
+      <section class="main-block">{{> trial}}</section>
+    </main> {{> footer}} </div><!--wrapper-->
   <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
   <script src="https://www.east-education.jp/wp-content/themes/corpo-site/assets/js/jquery.matchHeight-min.js"></script>
   <script src="https://www.east-education.jp/wp-content/themes/corpo-site/assets/js/jquery.sliderPro.min.js"></script>

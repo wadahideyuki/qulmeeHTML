@@ -1,0 +1,43 @@
+.nav-qulmee {
+  width: 95%;
+  max-width: 1600px;
+  border-radius: 10px;
+  margin: -25px auto 0 auto;
+  position: relative;
+  z-index: 2;
+  background-color: #60b5ff;
+  display: flex;
+  padding: 22px 40px;
+  font-size: clamp(0.9vw, 18px, 1.2vw);
+  gap: clamp(1vw, 20px, 2vw);
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+    padding-top: 0;
+    width: 9vw;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50vw;
+    li {
+      list-style: none;
+      a {
+        color: #fff;
+        font-weight: bold;
+      }
+    }
+  }
+  .btns {
+    display: flex;
+    width: 22vw;
+    flex-shrink: 0;
+    gap: 7px;
+    .u-button {
+      width: clamp(7vw, 165px, 13vw);
+  font-size: clamp(0.9vw, 16px, 1.2vw);
+  padding: .5em 0;
+    }
+  }
+}

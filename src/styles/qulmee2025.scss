@@ -1,4 +1,5 @@
 @charset "UTF-8";
+$pathImg:"/assets/img/";
 $spDesign: 390;
 $vw: 100vw;
 @function vw($suuji) {
@@ -11,14 +12,14 @@ $vw: 100vw;
 }
 
 .qulmee {
-	*{
-		
-  font-family: Zen Kaku Gothic New, sans-serif;
-	}
+  .qulmee-content * {
+    font-family: Zen Kaku Gothic New, sans-serif;
+  }
   font-weight: 500;
   font-size: 18px;
   color: #050000;
   @import "main";
+  @import "nav";
   @import "about";
   @import "case";
   @import "cta";
@@ -32,10 +33,16 @@ $vw: 100vw;
   @import "solution";
   @import "trial";
   @import "school";
-
+  .login{
+    @include mq{
+      display: none;
+    }
+  }
   .header {
     height: 60px;
     box-shadow: none;
+    @include mq{
+      display: none;}
     .menuBtn {
       display: none;
     }
@@ -61,7 +68,7 @@ $vw: 100vw;
   .u-button {
     display: flex;
     width: 292px;
-    height: 48px;
+    padding: .7em 0;
     font-size: 18px;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
     border-radius: 100px;
@@ -73,6 +80,18 @@ $vw: 100vw;
     &.download {
       background-color: #fff;
       color: #ff9149;
+    }
+    &.white{
+      border-color: #FFF;
+      background-color: #FFF;
+      color: #49b2f4;
+      font-weight: bold;
+    }
+    &.bd{
+      background-color: transparent;
+      border-color: #FFF;
+      color: #FFF;
+      font-weight: bold;
     }
   }
 }

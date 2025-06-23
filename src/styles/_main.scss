@@ -1,4 +1,55 @@
-.main-block{
-    color: red;
-    
+.main-block {
+  background-image: url($pathImg + "main/bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  .main-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 85%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 152px;
+    .text{
+      width: 63%;
+      .logo{
+        position: relative;
+        left: -5%;
+        top: -10%;
+      }
+    }
+    .img{
+      width: percentage(447 / 1400);
+      position: relative;
+      img {
+        width: 100%;
+        height: auto;
+      }
+      .badges{
+        position: absolute;
+        right: -7%;
+        top: -10%;
+        display: flex;
+        gap: 7px;
+        width: clamp(3vw, 329px,19vw);
+        list-style: none;
+      }
+    }
+    .catch {
+      font-size: clamp(3vw, 68px, 4vw);
+      font-weight: bold;
+      color: #050000;
+      letter-spacing: 0.1em;
+      line-height: 1.8;
+      strong {
+        color: #60b5ff;
+      }
+    }
+    .btns{
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      gap: 17px;
+    }
+  }
 }
