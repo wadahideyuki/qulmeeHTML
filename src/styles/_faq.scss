@@ -4,6 +4,9 @@
 .faq-block{
     padding: 190px 25px;
     background-color: #EBF6FD;
+    @include mq{
+        padding: vw(100) vw(25);
+    }
     .title{
         margin-bottom: 90px;
         text-align: center;
@@ -23,6 +26,10 @@
             font-size: 20px;
             font-weight: 700;
             line-height: 2.2;
+            @include mq{
+                padding: vw(25) vw(40);
+                font-size: vw(14);
+            }
             .q-item{
                 position: relative;
                 font-family: 'Noto Sans JP';
@@ -31,6 +38,30 @@
                     position: absolute;
                     left: -60px;
                     color: #0093FF;
+                    @include mq{
+                        font-size: vw(20);
+                        top: -10%;
+                        left: -10%;
+                    }
+                }
+                &::after{
+                    content: "";
+                    display: inline-block;
+                    width: 15px;
+                    height: 24px;
+                    mask-image: url(/assets/img/faq/icon-close.svg);
+                    mask-repeat: no-repeat;
+                    mask-size: contain;
+                    background-color: #EAEAEA;
+                    position: absolute;
+                    right: -60px;
+                    transform: rotate(90deg);
+                    @include mq{
+                        width: vw(13);
+                        height: vw(30);
+                        top: 0%;
+                        right: -8%;
+                    }
                 }
             }
             .a-item{    //check前
@@ -42,6 +73,11 @@
                     position: absolute;
                     left: -60px;
                     color: #F88F00;
+                    @include mq{
+                        font-size: vw(20);
+                        top: -4%;
+                        left: -10%;
+                    }
                 }
             }
         }
@@ -51,14 +87,24 @@
             opacity: 0;
         }
     }
-    #open-qa01:checked + label .a-item,
-    #open-qa02:checked + label .a-item,
-    #open-qa03:checked + label .a-item,
-    #open-qa04:checked + label .a-item,
-    #open-qa05:checked + label .a-item,
-    #open-qa06:checked + label .a-item,
-    #open-qa07:checked + label .a-item{  //check後
-        display: block;
+    #open-qa01:checked + label,
+    #open-qa02:checked + label,
+    #open-qa03:checked + label,
+    #open-qa04:checked + label,
+    #open-qa05:checked + label,
+    #open-qa06:checked + label,
+    #open-qa07:checked + label{  //check後
+        .a-item{
+            display: block;
+        }
+        .q-item{
+            &::after{
+                transform: rotate(270deg);
+                @include mq{
+                    right: -10%;
+                }
+            } 
+        }
     }
 
     color: #000000;

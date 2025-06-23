@@ -1,3 +1,11 @@
+.qulmee {
+  font-weight: 500;
+  font-size: 18px;
+  color: #050000;
+}
+.qulmee * {
+  font-family: Zen Kaku Gothic New, sans-serif;
+}
 .qulmee .main-block {
   color: red;
 }
@@ -14,6 +22,11 @@
   padding: 190px 25px;
   background-color: #EBF6FD;
   color: #000000;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .faq-block {
+    padding: 25.641025641vw 6.4102564103vw;
+  }
 }
 .qulmee .faq-block .title {
   margin-bottom: 90px;
@@ -35,6 +48,12 @@
   font-weight: 700;
   line-height: 2.2;
 }
+@media screen and (max-width: 767px) {
+  .qulmee .faq-block .qa-list .qa-box {
+    padding: 6.4102564103vw 10.2564102564vw;
+    font-size: 3.5897435897vw;
+  }
+}
 .qulmee .faq-block .qa-list .qa-box .q-item {
   position: relative;
   font-family: "Noto Sans JP";
@@ -44,6 +63,34 @@
   position: absolute;
   left: -60px;
   color: #0093FF;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .faq-block .qa-list .qa-box .q-item::before {
+    font-size: 5.1282051282vw;
+    top: -10%;
+    left: -10%;
+  }
+}
+.qulmee .faq-block .qa-list .qa-box .q-item::after {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 24px;
+  mask-image: url(/assets/img/faq/icon-close.svg);
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  background-color: #EAEAEA;
+  position: absolute;
+  right: -60px;
+  transform: rotate(90deg);
+}
+@media screen and (max-width: 767px) {
+  .qulmee .faq-block .qa-list .qa-box .q-item::after {
+    width: 3.3333333333vw;
+    height: 7.6923076923vw;
+    top: 0%;
+    right: -8%;
+  }
 }
 .qulmee .faq-block .qa-list .qa-box .a-item {
   display: none;
@@ -55,6 +102,13 @@
   position: absolute;
   left: -60px;
   color: #F88F00;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .faq-block .qa-list .qa-box .a-item::before {
+    font-size: 5.1282051282vw;
+    top: -4%;
+    left: -10%;
+  }
 }
 .qulmee .faq-block .qa-list .open-qa {
   position: absolute;
@@ -69,6 +123,26 @@
 .qulmee .faq-block #open-qa06:checked + label .a-item,
 .qulmee .faq-block #open-qa07:checked + label .a-item {
   display: block;
+}
+.qulmee .faq-block #open-qa01:checked + label .q-item::after,
+.qulmee .faq-block #open-qa02:checked + label .q-item::after,
+.qulmee .faq-block #open-qa03:checked + label .q-item::after,
+.qulmee .faq-block #open-qa04:checked + label .q-item::after,
+.qulmee .faq-block #open-qa05:checked + label .q-item::after,
+.qulmee .faq-block #open-qa06:checked + label .q-item::after,
+.qulmee .faq-block #open-qa07:checked + label .q-item::after {
+  transform: rotate(270deg);
+}
+@media screen and (max-width: 767px) {
+  .qulmee .faq-block #open-qa01:checked + label .q-item::after,
+  .qulmee .faq-block #open-qa02:checked + label .q-item::after,
+  .qulmee .faq-block #open-qa03:checked + label .q-item::after,
+  .qulmee .faq-block #open-qa04:checked + label .q-item::after,
+  .qulmee .faq-block #open-qa05:checked + label .q-item::after,
+  .qulmee .faq-block #open-qa06:checked + label .q-item::after,
+  .qulmee .faq-block #open-qa07:checked + label .q-item::after {
+    right: -10%;
+  }
 }
 .qulmee .faq-block dd {
   margin: 0;
@@ -97,15 +171,41 @@
 .qulmee .main-block {
   color: red;
 }
-
-h2.title .en {
+.qulmee .header {
+  height: 60px;
+  box-shadow: none;
+}
+.qulmee .header .menuBtn {
+  display: none;
+}
+.qulmee .header .gNav {
+  display: none;
+}
+.qulmee h2.title .en {
   font-size: 26px;
   font-weight: 900;
-  color: #49B2F4;
+  color: #49b2f4;
   display: block;
 }
-h2.title .jp {
+.qulmee h2.title .jp {
   font-weight: 700;
   font-size: 44px;
   color: #050000;
+}
+.qulmee .u-button {
+  display: flex;
+  width: 292px;
+  height: 48px;
+  font-size: 18px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 100px;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #ff9149;
+  background-color: #ff9149;
+  color: #fff;
+}
+.qulmee .u-button.download {
+  background-color: #fff;
+  color: #ff9149;
 }/*# sourceMappingURL=qulmee2025.css.map */
