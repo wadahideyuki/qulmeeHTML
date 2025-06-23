@@ -123,15 +123,6 @@
     padding: 25.641025641vw 6.4102564103vw;
   }
 }
-.qulmee .faq-block .title {
-  margin-bottom: 90px;
-  text-align: center;
-}
-@media screen and (max-width: 767px) {
-  .qulmee .faq-block .title {
-    margin-bottom: 23.0769230769vw;
-  }
-}
 .qulmee .faq-block .qa-list {
   max-width: 1400px;
   width: 100%;
@@ -355,6 +346,15 @@
 }
 .qulmee .header .gNav {
   display: none;
+}
+.qulmee h2.title {
+  text-align: center;
+  margin-bottom: 90px;
+}
+@media screen and (max-width: 767px) {
+  .qulmee h2.title {
+    margin-bottom: 15.3846153846vw;
+  }
 }
 .qulmee h2.title .en {
   margin-bottom: 30px;

@@ -7,14 +7,6 @@
     @include mq{
         padding: vw(100) vw(25);
     }
-    .title{
-        margin-bottom: 90px;
-        text-align: center;
-        @include mq{
-            margin-bottom: vw(90);
-        }
-    }
-
     .qa-list{
         max-width: 1400px;
         width: 100%;
