@@ -11,16 +11,18 @@ body {
   background-color: #fff;
 }
 
-.title{
-    font-size: 44px;
-    text-align: center;
-}
-.faq-wrap{
-    max-width: 1400px;
-    width: 100%;
-    margin: 0 auto;
-    background-color: rgb(214, 214, 214);
+.faq-block{
+    padding: 25px;
+    background-color: #EBF6FD;
+    .title{
+        font-size: 44px;
+        text-align: center;
+    }
+
     .qa-list{
+        max-width: 1400px;
+        width: 100%;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -30,26 +32,42 @@ body {
             border-radius: 10px;
             font-size: 20px;
             font-weight: 700;
-        .q-item{
-            margin-bottom: 40px;
-            position: relative;
-            &::before{
-                content: "Q";
-                position: absolute;
-                left: -60px;
-                color: #0093FF;
+            line-height: 2.2;
+            .q-item{
+                position: relative;
+                &::before{
+                    content: "Q";
+                    position: absolute;
+                    left: -60px;
+                    color: #0093FF;
+                }
+            }
+            .a-item{    //check前
+                display: none;
+                margin-top: 40px;
+                position: relative;
+                &::before{
+                    content: "A";
+                    position: absolute;
+                    left: -60px;
+                    color: #F88F00;
+                }
             }
         }
-        .a-item{
-            position: relative;
-            &::before{
-                content: "A";
-                position: absolute;
-                left: -60px;
-                color: #F88F00;
-            }
+        .open-qa{
+            position: absolute;
+            cursor: n-resize;
+            opacity: 0;
         }
-        }
+    }
+    #open-qa01:checked + label .a-item,
+    #open-qa02:checked + label .a-item,
+    #open-qa03:checked + label .a-item,
+    #open-qa04:checked + label .a-item,
+    #open-qa05:checked + label .a-item,
+    #open-qa06:checked + label .a-item,
+    #open-qa07:checked + label .a-item{  //check後
+        display: block;
     }
 
     color: #000000;

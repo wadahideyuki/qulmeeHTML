@@ -17,49 +17,66 @@
   color: #363636;
   background-color: #fff;
 }
-.qulmee .title {
+.qulmee .faq-block {
+  padding: 25px;
+  background-color: #EBF6FD;
+  color: #000000;
+}
+.qulmee .faq-block .title {
   font-size: 44px;
   text-align: center;
 }
-.qulmee .faq-wrap {
+.qulmee .faq-block .qa-list {
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
-  background-color: rgb(214, 214, 214);
-  color: #000000;
-}
-.qulmee .faq-wrap .qa-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.qulmee .faq-wrap .qa-list .qa-box {
+.qulmee .faq-block .qa-list .qa-box {
   padding: 30px 120px 50px 110px;
   background-color: #ffffff;
   border-radius: 10px;
   font-size: 20px;
   font-weight: 700;
+  line-height: 2.2;
 }
-.qulmee .faq-wrap .qa-list .qa-box .q-item {
-  margin-bottom: 40px;
+.qulmee .faq-block .qa-list .qa-box .q-item {
   position: relative;
 }
-.qulmee .faq-wrap .qa-list .qa-box .q-item::before {
+.qulmee .faq-block .qa-list .qa-box .q-item::before {
   content: "Q";
   position: absolute;
   left: -60px;
   color: #0093FF;
 }
-.qulmee .faq-wrap .qa-list .qa-box .a-item {
+.qulmee .faq-block .qa-list .qa-box .a-item {
+  display: none;
+  margin-top: 40px;
   position: relative;
 }
-.qulmee .faq-wrap .qa-list .qa-box .a-item::before {
+.qulmee .faq-block .qa-list .qa-box .a-item::before {
   content: "A";
   position: absolute;
   left: -60px;
   color: #F88F00;
 }
-.qulmee .faq-wrap dd {
+.qulmee .faq-block .qa-list .open-qa {
+  position: absolute;
+  cursor: n-resize;
+  opacity: 0;
+}
+.qulmee .faq-block #open-qa01:checked + label .a-item,
+.qulmee .faq-block #open-qa02:checked + label .a-item,
+.qulmee .faq-block #open-qa03:checked + label .a-item,
+.qulmee .faq-block #open-qa04:checked + label .a-item,
+.qulmee .faq-block #open-qa05:checked + label .a-item,
+.qulmee .faq-block #open-qa06:checked + label .a-item,
+.qulmee .faq-block #open-qa07:checked + label .a-item {
+  display: block;
+}
+.qulmee .faq-block dd {
   margin: 0;
 }
 .qulmee .main-block {
