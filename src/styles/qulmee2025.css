@@ -255,8 +255,8 @@
     box-shadow: none !important;
   }
 }
-.qulmee .main-block {
-  color: red;
+.qulmee .about-block {
+  padding: 160px 25px 0 25px;
 }
 .qulmee .main-block {
   color: red;
