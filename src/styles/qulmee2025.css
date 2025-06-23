@@ -740,6 +740,39 @@
 .qulmee .main-block {
   color: red;
 }
+.qulmee .cta-mid {
+  background-image: url(/assets/img/about/bg-bottom.svg);
+  text-align: center;
+  padding: 80px 25px;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .cta-mid {
+    padding: 12.8205128205vw 10.2564102564vw;
+  }
+}
+.qulmee .cta-mid p {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 0;
+  color: #fff;
+  margin-bottom: 25px;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .cta-mid p {
+    font-size: 5.1282051282vw;
+    margin-bottom: 10.2564102564vw;
+  }
+}
+.qulmee .cta-mid ul {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .cta-mid ul {
+    flex-direction: column;
+  }
+}
 .qulmee .main-block {
   color: red;
 }
