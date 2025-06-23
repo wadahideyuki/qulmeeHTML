@@ -1,17 +1,7 @@
 
 
 $(function () {
-  $(".l-header .menu").on("click", function () {
-    $(this).toggleClass("open");
+  $(".sp-menu-open").on("click", function () {
+    $(".nav-qulmee .menu").toggleClass("show");
   });
-  $(".l-header .toggle").on("click", function () {
-    $(this).toggleClass("open");
-  });
-  $(".jsDropMenu").on("click", function () {
-    $(this).toggleClass("open");
-  });
-  $(".jsModalClose").on("click", function () {
-    $(".l-modal").hide();
-  });
-
 });
