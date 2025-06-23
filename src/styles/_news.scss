@@ -15,14 +15,14 @@
       display: block;
     }
     .title {
-      width: percentage(362 / 1400);
+      width: percentage(math.div(362, 1400));
       @include mq {
         width: auto;
         margin-bottom: vw(40);
       }
     }
     .news-content {
-      width: percentage(1038 / 1400);
+      width: percentage(math.div(1038, 1400));
       display: flex;
       gap: 5%;
       font-weight: bold;

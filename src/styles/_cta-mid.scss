@@ -1,0 +1,27 @@
+.cta-mid {
+  background-image: url(/assets/img/about/bg-bottom.svg);
+  text-align: center;
+  padding: 80px 25px;
+  @include mq {
+    padding: vw(50) vw(40);
+  }
+  p {
+    font-size: 30px;
+    font-weight: bold;
+      margin-top: 0;
+    color: #fff;
+    margin-bottom: 25px;
+    @include mq {
+      font-size: vw(20);
+      margin-bottom: vw(40);
+    }
+  }
+  ul {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    @include mq {
+      flex-direction: column;
+    }
+  }
+}

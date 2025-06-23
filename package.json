@@ -23,6 +23,7 @@
   "dependencies": {
     "jquery": "^3.7.1",
     "sass": "^1.79.4",
+    "swiper": "^11.2.8",
     "vite-plugin-webp-and-path": "^0.1.4",
     "vite-plugin-webp-and-path-devide": "^0.1.4"
   }

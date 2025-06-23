@@ -1,15 +1,18 @@
 @charset "UTF-8";
+@use "sass:math";
+
 $pathImg:"/assets/img/";
 $spDesign: 390;
 $vw: 100vw;
 @function vw($suuji) {
-  @return ($suuji / $spDesign) * 100vw;
+  @return math.div($suuji, $spDesign) * 100vw;
 }
 @mixin mq {
   @media screen and (max-width: 767px) {
     @content;
   }
 }
+
 
 .qulmee {
   .qulmee-content * {
@@ -22,6 +25,7 @@ $vw: 100vw;
   @import "nav";
   @import "about";
   @import "case";
+  @import "cta-mid";
   @import "cta";
   @import "faq";
   @import "flow";
