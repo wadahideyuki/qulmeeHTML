@@ -5,40 +5,74 @@ $vw: 100vw;
   @return ($suuji / $spDesign) * 100vw;
 }
 @mixin mq {
-	@media screen and (max-width: 767px) {
-		@content;
-	}
+  @media screen and (max-width: 767px) {
+    @content;
+  }
 }
 
-.qulmee{
-@import "main";
-@import "about";
-@import "case";
-@import "cta";
-@import "faq";
-@import "flow";
-@import "main";
-@import "merit";
-@import "news";
-@import "point";
-@import "price";
-@import "solution";
-@import "trial";
-@import "school";
-}
-
-
-h2.title{
-
-	.en{
-		font-size: 26px;
-		font-weight: 900;
-		color: #49B2F4;
-		display: block;
+.qulmee {
+	*{
+		
+  font-family: Zen Kaku Gothic New, sans-serif;
 	}
-	.jp{
-		font-weight: 700;
-		font-size: 44px;
-		color: #050000;
-	}
+  font-weight: 500;
+  font-size: 18px;
+  color: #050000;
+  @import "main";
+  @import "about";
+  @import "case";
+  @import "cta";
+  @import "faq";
+  @import "flow";
+  @import "main";
+  @import "merit";
+  @import "news";
+  @import "point";
+  @import "price";
+  @import "solution";
+  @import "trial";
+  @import "school";
+
+  .header {
+    height: 60px;
+    box-shadow: none;
+    .menuBtn {
+      display: none;
+    }
+    .gNav {
+      display: none;
+    }
+  }
+
+  h2.title {
+    .en {
+      font-size: 26px;
+      font-weight: 900;
+      color: #49b2f4;
+      display: block;
+    }
+    .jp {
+      font-weight: 700;
+      font-size: 44px;
+      color: #050000;
+    }
+  }
+
+  .u-button {
+    display: flex;
+    width: 292px;
+    height: 48px;
+    font-size: 18px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #ff9149;
+    background-color: #ff9149;
+    color: #fff;
+    &.download {
+      background-color: #fff;
+      color: #ff9149;
+    }
+  }
 }
