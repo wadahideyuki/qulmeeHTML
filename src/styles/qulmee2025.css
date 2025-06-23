@@ -10,8 +10,57 @@
 .qulmee .main-block {
   color: red;
 }
-.qulmee .main-block {
-  color: red;
+.qulmee body {
+  font-family: "Zen Kaku Gothic New", "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #363636;
+  background-color: #fff;
+}
+.qulmee .title {
+  font-size: 44px;
+  text-align: center;
+}
+.qulmee .faq-wrap {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgb(214, 214, 214);
+  color: #000000;
+}
+.qulmee .faq-wrap .qa-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.qulmee .faq-wrap .qa-list .qa-box {
+  padding: 30px 120px 50px 110px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.qulmee .faq-wrap .qa-list .qa-box .q-item {
+  margin-bottom: 40px;
+  position: relative;
+}
+.qulmee .faq-wrap .qa-list .qa-box .q-item::before {
+  content: "Q";
+  position: absolute;
+  left: -60px;
+  color: #0093FF;
+}
+.qulmee .faq-wrap .qa-list .qa-box .a-item {
+  position: relative;
+}
+.qulmee .faq-wrap .qa-list .qa-box .a-item::before {
+  content: "A";
+  position: absolute;
+  left: -60px;
+  color: #F88F00;
+}
+.qulmee .faq-wrap dd {
+  margin: 0;
 }
 .qulmee .main-block {
   color: red;
@@ -39,5 +88,13 @@
 }
 
 h2.title .en {
+  font-size: 26px;
+  font-weight: 900;
+  color: #49B2F4;
   display: block;
+}
+h2.title .jp {
+  font-weight: 700;
+  font-size: 44px;
+  color: #050000;
 }/*# sourceMappingURL=qulmee2025.css.map */

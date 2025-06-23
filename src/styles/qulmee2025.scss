@@ -29,8 +29,16 @@ $vw: 100vw;
 
 
 h2.title{
+
 	.en{
+		font-size: 26px;
+		font-weight: 900;
+		color: #49B2F4;
 		display: block;
 	}
-	.jp{}
+	.jp{
+		font-weight: 700;
+		font-size: 44px;
+		color: #050000;
+	}
 }
