@@ -29,3 +29,5 @@ output/
 
 # Optional: TypeScript cache
 *.tsbuildinfo
+.css
+.map
