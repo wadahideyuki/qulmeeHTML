@@ -1,11 +1,52 @@
 .price-block{
+    padding: 215px 25px 155px 25px;
+    font-weight: 700;
+    background-image: url("/assets/img/price/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    @include mq{
+        background-image: none;
+        padding: vw(110) 0 vw(100) 0;
+    }
+    &::before{
+        @include mq{
+            content: "";
+            display: block;
+            width: 100%;
+            height: vw(480);
+            background-image: url("/assets/img/price/bg-sp-top.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: 0%;
+            right: 0%;
+        }
+    }
+    &::after{
+        @include mq{
+            content: "";
+            display: block;
+            width: 100%;
+            height: 120.102564vw;
+            background-image: url(/assets/img/price/bg-sp-bottom.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            bottom: -7%;
+            left: 0%;
+        }
+    }
     .plan-ul{
         max-width: 1330px;
         width: 100%;
         margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 105px;
+        gap: 5vw;
+        @media (max-width:1200px){
+            grid-template-columns: 1fr;
+        }
         .plan-li{
             padding: 55px 60px;
             border-radius: 20px;
@@ -13,9 +54,15 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            .entry{
-                width: 374px;
+            @include mq{
+                padding: vw(50) vw(30) vw(50) vw(30);
+                // border: none;
+            }
+            .entry,.standard{
+                width: 100%;
+                max-width: 374px;
                 height: 54px;
+                margin-bottom: 40px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -24,36 +71,149 @@
                 border-radius: 50px;
                 font-size: 27px;
                 font-weight: 700;
+                @include mq{
+                    display: none;
+                }
             }
-            .plan-dl{
+            .entry-standard{
                 width: 100%;
                 display: flex;
-                justify-content: space-around;
-                flex-wrap: wrap;
-                .year{
-                    width: 50%;
+                justify-content: center;
+                gap: vw(15);
+                display: none;
+                @include mq{
+                    display: flex;
+                    margin-bottom: vw(15);
+                }
+            }
+            //SPのみ表示　エントリープラン、スタンダードプラン
+            .entry-sp,.standard-sp{
+                flex: 1;
+                height: vw(24);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50px;
+            }
+            .entry-sp{
+                color: #60B5FF;
+                background-color: #E5F4FF;
+                font-size: vw(14);
+            }
+            .standard-sp{
+                color: #FF9149;
+                background-color: #FFF7CB;
+                font-size: vw(14);
+            }
+
+            .plan-dl{
+                max-width: 310px;
+                width: 100%;
+                padding: 0 25px;
+                display: flex;
+                justify-content: space-between;
+                @include mq{
+                    max-width: vw(530);
+                    padding: 0 vw(25) 0 vw(38);
+                }
+                &.no01{
+                    margin-bottom: 25px;
+                }
+                &.no02{
+                    margin-bottom: 40px;
                 }
                 .enn{
-                    width: 50%;
                     margin: 0;
+                }
+
+                //SPのみ表示　価格
+                .plan-sp{
+                    display: none;
+                    @include mq{
+                        display: block;
+                        letter-spacing: .4vw;
+                    }
+                }
+                .year-sp{
+                    font-size: vw(14);
+                    color: #B1B1B1;
+                }
+                .enn-sp{
+                    font-size: vw(18);
                 }
             }
             .plan-table{
                 .th01{
                     width: 60%;
+                    @include mq{
+                        width: 100%;
+                    }
                 }
                 .td01{
                     width: 40%;
+                    @include mq{
+                        width: 100%;
+                    }
                 }
                 th,td{
                     text-align: center;
                 }
                 tr{
+                    border-top: solid #707070 1px;
+                    @include mq{
+                        border-top: none;
+                    }
+                    &:nth-child(odd){
+                        background-color: #F5F5F5;
+                        @include mq{
+                            background-color: #ffffff;
+                        }
+                    }
                     th{
-                        padding: 28;
+                        padding-top: 28px;
+                        padding-bottom: 28px;
+                        @include mq{
+                            padding-top: vw(10);
+                            padding-bottom: vw(10);
+                            display: block;
+                            background-color: #F5F5F5;
+                            color: #868686;
+                            font-size: vw(12);
+                        }
+                    }
+                    td{
+                        padding-top: 28px;
+                        padding-bottom: 28px;
+                        color: #797979;
+                        @include mq{
+                            padding-top: vw(10);
+                            padding-bottom: vw(10);
+                            padding-left: vw(70);
+                            padding-right: vw(70);
+                            display: flex;
+                            justify-content: space-between;
+                            color: #000205;
+                        }
                     }
                 }
             }
+            &.pc-only{
+                @include mq{
+                    display: none;
+                }
+            }
+        }
+    }
+    .sp{
+        display: none !important;
+        @include mq{
+            display: block !important;
+        }
+    }
+    .pc{
+        display: block !important;
+        @include mq{
+            display: none !important;
         }
     }
 }

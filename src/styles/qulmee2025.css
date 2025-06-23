@@ -607,13 +607,60 @@
 .qulmee .main-block {
   color: red;
 }
+.qulmee .price-block {
+  padding: 215px 25px 155px 25px;
+  font-weight: 700;
+  background-image: url("/assets/img/price/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .price-block {
+    background-image: none;
+    padding: 28.2051282051vw 0 25.641025641vw 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .qulmee .price-block::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 123.0769230769vw;
+    background-image: url("/assets/img/price/bg-sp-top.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .qulmee .price-block::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 120.102564vw;
+    background-image: url(/assets/img/price/bg-sp-bottom.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: -7%;
+    left: 0%;
+  }
+}
 .qulmee .price-block .plan-ul {
   max-width: 1330px;
   width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 105px;
+  gap: 5vw;
+}
+@media (max-width: 1200px) {
+  .qulmee .price-block .plan-ul {
+    grid-template-columns: 1fr;
+  }
 }
 .qulmee .price-block .plan-ul .plan-li {
   padding: 55px 60px;
@@ -623,9 +670,16 @@
   flex-direction: column;
   align-items: center;
 }
-.qulmee .price-block .plan-ul .plan-li .entry {
-  width: 374px;
+@media screen and (max-width: 767px) {
+  .qulmee .price-block .plan-ul .plan-li {
+    padding: 12.8205128205vw 7.6923076923vw 12.8205128205vw 7.6923076923vw;
+  }
+}
+.qulmee .price-block .plan-ul .plan-li .entry, .qulmee .price-block .plan-ul .plan-li .standard {
+  width: 100%;
+  max-width: 374px;
   height: 54px;
+  margin-bottom: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -635,30 +689,165 @@
   font-size: 27px;
   font-weight: 700;
 }
-.qulmee .price-block .plan-ul .plan-li .plan-dl {
+@media screen and (max-width: 767px) {
+  .qulmee .price-block .plan-ul .plan-li .entry, .qulmee .price-block .plan-ul .plan-li .standard {
+    display: none;
+  }
+}
+.qulmee .price-block .plan-ul .plan-li .entry-standard {
   width: 100%;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3.8461538462vw;
+  display: none;
 }
-.qulmee .price-block .plan-ul .plan-li .plan-dl .year {
-  width: 50%;
+@media screen and (max-width: 767px) {
+  .qulmee .price-block .plan-ul .plan-li .entry-standard {
+    display: flex;
+    margin-bottom: 3.8461538462vw;
+  }
+}
+.qulmee .price-block .plan-ul .plan-li .entry-sp, .qulmee .price-block .plan-ul .plan-li .standard-sp {
+  flex: 1;
+  height: 6.1538461538vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+.qulmee .price-block .plan-ul .plan-li .entry-sp {
+  color: #60B5FF;
+  background-color: #E5F4FF;
+  font-size: 3.5897435897vw;
+}
+.qulmee .price-block .plan-ul .plan-li .standard-sp {
+  color: #FF9149;
+  background-color: #FFF7CB;
+  font-size: 3.5897435897vw;
+}
+.qulmee .price-block .plan-ul .plan-li .plan-dl {
+  max-width: 310px;
+  width: 100%;
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .price-block .plan-ul .plan-li .plan-dl {
+    max-width: 135.8974358974vw;
+    padding: 0 6.4102564103vw 0 9.7435897436vw;
+  }
+}
+.qulmee .price-block .plan-ul .plan-li .plan-dl.no01 {
+  margin-bottom: 25px;
+}
+.qulmee .price-block .plan-ul .plan-li .plan-dl.no02 {
+  margin-bottom: 40px;
 }
 .qulmee .price-block .plan-ul .plan-li .plan-dl .enn {
-  width: 50%;
   margin: 0;
+}
+.qulmee .price-block .plan-ul .plan-li .plan-dl .plan-sp {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .price-block .plan-ul .plan-li .plan-dl .plan-sp {
+    display: block;
+    letter-spacing: 0.4vw;
+  }
+}
+.qulmee .price-block .plan-ul .plan-li .plan-dl .year-sp {
+  font-size: 3.5897435897vw;
+  color: #B1B1B1;
+}
+.qulmee .price-block .plan-ul .plan-li .plan-dl .enn-sp {
+  font-size: 4.6153846154vw;
 }
 .qulmee .price-block .plan-ul .plan-li .plan-table .th01 {
   width: 60%;
 }
+@media screen and (max-width: 767px) {
+  .qulmee .price-block .plan-ul .plan-li .plan-table .th01 {
+    width: 100%;
+  }
+}
 .qulmee .price-block .plan-ul .plan-li .plan-table .td01 {
   width: 40%;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .price-block .plan-ul .plan-li .plan-table .td01 {
+    width: 100%;
+  }
 }
 .qulmee .price-block .plan-ul .plan-li .plan-table th, .qulmee .price-block .plan-ul .plan-li .plan-table td {
   text-align: center;
 }
+.qulmee .price-block .plan-ul .plan-li .plan-table tr {
+  border-top: solid #707070 1px;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .price-block .plan-ul .plan-li .plan-table tr {
+    border-top: none;
+  }
+}
+.qulmee .price-block .plan-ul .plan-li .plan-table tr:nth-child(odd) {
+  background-color: #F5F5F5;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .price-block .plan-ul .plan-li .plan-table tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+}
 .qulmee .price-block .plan-ul .plan-li .plan-table tr th {
-  padding: 28;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .price-block .plan-ul .plan-li .plan-table tr th {
+    padding-top: 2.5641025641vw;
+    padding-bottom: 2.5641025641vw;
+    display: block;
+    background-color: #F5F5F5;
+    color: #868686;
+    font-size: 3.0769230769vw;
+  }
+}
+.qulmee .price-block .plan-ul .plan-li .plan-table tr td {
+  padding-top: 28px;
+  padding-bottom: 28px;
+  color: #797979;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .price-block .plan-ul .plan-li .plan-table tr td {
+    padding-top: 2.5641025641vw;
+    padding-bottom: 2.5641025641vw;
+    padding-left: 17.9487179487vw;
+    padding-right: 17.9487179487vw;
+    display: flex;
+    justify-content: space-between;
+    color: #000205;
+  }
+}
+@media screen and (max-width: 767px) {
+  .qulmee .price-block .plan-ul .plan-li.pc-only {
+    display: none;
+  }
+}
+.qulmee .price-block .sp {
+  display: none !important;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .price-block .sp {
+    display: block !important;
+  }
+}
+.qulmee .price-block .pc {
+  display: block !important;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .price-block .pc {
+    display: none !important;
+  }
 }
 .qulmee .main-block {
   color: red;
