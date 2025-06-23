@@ -321,8 +321,11 @@
 .qulmee .main-block {
   color: red;
 }
-.qulmee .main-block {
-  color: red;
+.qulmee .trial-block .trial-wrap {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: beige;
 }
 @media screen and (max-width: 767px) {
   .qulmee .login {
