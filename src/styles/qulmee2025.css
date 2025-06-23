@@ -536,8 +536,58 @@
 .qulmee .main-block {
   color: red;
 }
-.qulmee .main-block {
-  color: red;
+.qulmee .price-block .plan-ul {
+  max-width: 1330px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 105px;
+}
+.qulmee .price-block .plan-ul .plan-li {
+  padding: 55px 60px;
+  border-radius: 20px;
+  border: 1px solid #C7C7C7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.qulmee .price-block .plan-ul .plan-li .entry {
+  width: 374px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #60B5FF;
+  color: #ffffff;
+  border-radius: 50px;
+  font-size: 27px;
+  font-weight: 700;
+}
+.qulmee .price-block .plan-ul .plan-li .plan-dl {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.qulmee .price-block .plan-ul .plan-li .plan-dl .year {
+  width: 50%;
+}
+.qulmee .price-block .plan-ul .plan-li .plan-dl .enn {
+  width: 50%;
+  margin: 0;
+}
+.qulmee .price-block .plan-ul .plan-li .plan-table .th01 {
+  width: 60%;
+}
+.qulmee .price-block .plan-ul .plan-li .plan-table .td01 {
+  width: 40%;
+}
+.qulmee .price-block .plan-ul .plan-li .plan-table th, .qulmee .price-block .plan-ul .plan-li .plan-table td {
+  text-align: center;
+}
+.qulmee .price-block .plan-ul .plan-li .plan-table tr th {
+  padding: 28;
 }
 .qulmee .main-block {
   color: red;

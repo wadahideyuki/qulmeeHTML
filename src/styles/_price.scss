@@ -1,3 +1,59 @@
-.main-block{
-    color: red;
+.price-block{
+    .plan-ul{
+        max-width: 1330px;
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 105px;
+        .plan-li{
+            padding: 55px 60px;
+            border-radius: 20px;
+            border: 1px solid #C7C7C7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .entry{
+                width: 374px;
+                height: 54px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #60B5FF;
+                color: #ffffff;
+                border-radius: 50px;
+                font-size: 27px;
+                font-weight: 700;
+            }
+            .plan-dl{
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                .year{
+                    width: 50%;
+                }
+                .enn{
+                    width: 50%;
+                    margin: 0;
+                }
+            }
+            .plan-table{
+                .th01{
+                    width: 60%;
+                }
+                .td01{
+                    width: 40%;
+                }
+                th,td{
+                    text-align: center;
+                }
+                tr{
+                    th{
+                        padding: 28;
+                    }
+                }
+            }
+        }
+    }
 }
