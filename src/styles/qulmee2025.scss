@@ -56,15 +56,39 @@ $vw: 100vw;
 
   h2.title {
     .en {
+	  margin-bottom: 30px;
       font-size: 26px;
       font-weight: 900;
       color: #49b2f4;
       display: block;
+	  @include mq{
+		margin-bottom: vw(15);
+		font-size: vw(20);
+	  }
+	  &::before{
+		content: "";
+		display: inline-block;
+		width: 25px;
+		height: 18px;
+		margin-right: 10px;
+		mask-image: url('/assets/img/title-detail.svg');
+		mask-repeat: no-repeat;
+		mask-size: contain;
+		background-color: #49b2f4;
+		@include mq{
+			width: vw(25);
+			height: vw(18);
+		}
+	  }
     }
     .jp {
+		margin-bottom: 30px;
       font-weight: 700;
       font-size: 44px;
       color: #050000;
+	  @include mq{
+		font-size: vw(26);
+	  }
     }
   }
 

@@ -3,11 +3,106 @@
   font-size: 18px;
   color: #050000;
 }
-.qulmee * {
+.qulmee .qulmee-content * {
   font-family: Zen Kaku Gothic New, sans-serif;
 }
 .qulmee .main-block {
-  color: red;
+  background-image: url("/assets/img/main/bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.qulmee .main-block .main-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 85%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 152px;
+}
+.qulmee .main-block .main-inner .text {
+  width: 63%;
+}
+.qulmee .main-block .main-inner .text .logo {
+  position: relative;
+  left: -5%;
+  top: -10%;
+}
+.qulmee .main-block .main-inner .img {
+  width: 31.9285714286%;
+  position: relative;
+}
+.qulmee .main-block .main-inner .img img {
+  width: 100%;
+  height: auto;
+}
+.qulmee .main-block .main-inner .img .badges {
+  position: absolute;
+  right: -7%;
+  top: -10%;
+  display: flex;
+  gap: 7px;
+  width: clamp(3vw, 329px, 19vw);
+  list-style: none;
+}
+.qulmee .main-block .main-inner .catch {
+  font-size: clamp(3vw, 68px, 4vw);
+  font-weight: bold;
+  color: #050000;
+  letter-spacing: 0.1em;
+  line-height: 1.8;
+}
+.qulmee .main-block .main-inner .catch strong {
+  color: #60b5ff;
+}
+.qulmee .main-block .main-inner .btns {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 17px;
+}
+.qulmee .nav-qulmee {
+  width: 95%;
+  max-width: 1600px;
+  border-radius: 10px;
+  margin: -25px auto 0 auto;
+  position: relative;
+  z-index: 2;
+  background-color: #60b5ff;
+  display: flex;
+  padding: 22px 40px;
+  font-size: clamp(0.9vw, 18px, 1.2vw);
+  gap: clamp(1vw, 20px, 2vw);
+  justify-content: space-between;
+  align-items: center;
+}
+.qulmee .nav-qulmee .logo {
+  padding-top: 0;
+  width: 9vw;
+}
+.qulmee .nav-qulmee ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50vw;
+}
+.qulmee .nav-qulmee ul li {
+  list-style: none;
+}
+.qulmee .nav-qulmee ul li a {
+  color: #fff;
+  font-weight: bold;
+}
+.qulmee .nav-qulmee .btns {
+  display: flex;
+  width: 22vw;
+  flex-shrink: 0;
+  gap: 7px;
+}
+.qulmee .nav-qulmee .btns .u-button {
+  width: clamp(7vw, 165px, 13vw);
+  font-size: clamp(0.9vw, 16px, 1.2vw);
+  padding: 0.5em 0;
 }
 .qulmee .main-block {
   color: red;
@@ -166,7 +261,59 @@
   color: red;
 }
 .qulmee .main-block {
-  color: red;
+  background-image: url("/assets/img/main/bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.qulmee .main-block .main-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 85%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 152px;
+}
+.qulmee .main-block .main-inner .text {
+  width: 63%;
+}
+.qulmee .main-block .main-inner .text .logo {
+  position: relative;
+  left: -5%;
+  top: -10%;
+}
+.qulmee .main-block .main-inner .img {
+  width: 31.9285714286%;
+  position: relative;
+}
+.qulmee .main-block .main-inner .img img {
+  width: 100%;
+  height: auto;
+}
+.qulmee .main-block .main-inner .img .badges {
+  position: absolute;
+  right: -7%;
+  top: -10%;
+  display: flex;
+  gap: 7px;
+  width: clamp(3vw, 329px, 19vw);
+  list-style: none;
+}
+.qulmee .main-block .main-inner .catch {
+  font-size: clamp(3vw, 68px, 4vw);
+  font-weight: bold;
+  color: #050000;
+  letter-spacing: 0.1em;
+  line-height: 1.8;
+}
+.qulmee .main-block .main-inner .catch strong {
+  color: #60b5ff;
+}
+.qulmee .main-block .main-inner .btns {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 17px;
 }
 .qulmee .main-block {
   color: red;
@@ -185,10 +332,23 @@
 }
 .qulmee .main-block {
   color: red;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .login {
+    display: none;
+  }
+}
+.qulmee li {
+  list-style: none;
 }
 .qulmee .header {
   height: 60px;
   box-shadow: none;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .header {
+    display: none;
+  }
 }
 .qulmee .header .menuBtn {
   display: none;
@@ -197,20 +357,50 @@
   display: none;
 }
 .qulmee h2.title .en {
+  margin-bottom: 30px;
   font-size: 26px;
   font-weight: 900;
   color: #49b2f4;
   display: block;
 }
+@media screen and (max-width: 767px) {
+  .qulmee h2.title .en {
+    margin-bottom: 3.8461538462vw;
+    font-size: 5.1282051282vw;
+  }
+}
+.qulmee h2.title .en::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 18px;
+  margin-right: 10px;
+  mask-image: url("/assets/img/title-detail.svg");
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  background-color: #49b2f4;
+}
+@media screen and (max-width: 767px) {
+  .qulmee h2.title .en::before {
+    width: 6.4102564103vw;
+    height: 4.6153846154vw;
+  }
+}
 .qulmee h2.title .jp {
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 44px;
   color: #050000;
 }
+@media screen and (max-width: 767px) {
+  .qulmee h2.title .jp {
+    font-size: 6.6666666667vw;
+  }
+}
 .qulmee .u-button {
   display: flex;
   width: 292px;
-  height: 48px;
+  padding: 0.7em 0;
   font-size: 18px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   border-radius: 100px;
@@ -223,4 +413,16 @@
 .qulmee .u-button.download {
   background-color: #fff;
   color: #ff9149;
+}
+.qulmee .u-button.white {
+  border-color: #FFF;
+  background-color: #FFF;
+  color: #49b2f4;
+  font-weight: bold;
+}
+.qulmee .u-button.bd {
+  background-color: transparent;
+  border-color: #FFF;
+  color: #FFF;
+  font-weight: bold;
 }/*# sourceMappingURL=qulmee2025.css.map */
