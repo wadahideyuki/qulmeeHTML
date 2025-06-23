@@ -2,6 +2,9 @@
   background-image: url($pathImg + "main/bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  @include mq {
+    background-image: url($pathImg + "main/bg-sp.svg");
+  }
   .main-inner {
     max-width: 1400px;
     margin: 0 auto;
@@ -10,46 +13,95 @@
     display: flex;
     justify-content: space-between;
     padding-top: 152px;
-    .text{
-      width: 63%;
-      .logo{
+    @include mq {
+      padding-top: vw(112);
+      width: 90%;
+      flex-direction: column;
+      padding-bottom: vw(30);
+    }
+    .text {
+      width: 65%;
+      @include mq {
+        width: auto;
+        display: contents;
+      }
+      .logo {
         position: relative;
         left: -5%;
         top: -10%;
+        @include mq {
+          display: none;
+        }
       }
     }
-    .img{
-      width: percentage(447 / 1400);
-      position: relative;
-      img {
-        width: 100%;
-        height: auto;
-      }
-      .badges{
-        position: absolute;
-        right: -7%;
-        top: -10%;
-        display: flex;
-        gap: 7px;
-        width: clamp(3vw, 329px,19vw);
-        list-style: none;
-      }
-    }
+
     .catch {
       font-size: clamp(3vw, 68px, 4vw);
       font-weight: bold;
       color: #050000;
       letter-spacing: 0.1em;
       line-height: 1.8;
+      @include mq {
+        font-size: vw(29);
+        letter-spacing: 0;
+        position: relative;
+        right: -2vw;
+        order: 1;
+        margin: 0;
+        margin-bottom: vw(75);
+      }
       strong {
         color: #60b5ff;
       }
     }
-    .btns{
+    .img {
+      width: percentage(447 / 1400);
+      position: relative;
+      @include mq {
+        width: vw(240);
+        margin: 0 auto;
+        order: 2;
+        
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+      .badges {
+        position: absolute;
+        right: -7%;
+        top: -10%;
+        display: flex;
+        gap: 7px;
+        width: clamp(3vw, 329px, 19vw);
+        list-style: none;
+        @include mq {
+          width: vw(218);
+          right: -24%;
+    top: -11%;
+        }
+      }
+    }
+    .btns {
       display: flex;
       width: 100%;
       justify-content: center;
       gap: 17px;
+      order: 3;
+      @include mq{
+        flex-direction: column;
+        width: vw(292);
+        margin: 0 auto;
+        gap: vw(10);
+      }
+      .u-button {
+        width: clamp(7vw, 292px, 20vw);
+        font-size: clamp(0.9vw, 18px, 1.4vw);
+        @include mq{
+          width: 100%;
+          font-size: vw(16);
+        }
+      }
     }
   }
 }

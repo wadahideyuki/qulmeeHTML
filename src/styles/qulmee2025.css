@@ -11,6 +11,14 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+<<<<<<< HEAD
+=======
+@media screen and (max-width: 767px) {
+  .qulmee .main-block {
+    background-image: url("/assets/img/main/bg-sp.svg");
+  }
+}
+>>>>>>> 01575f9 (main)
 .qulmee .main-block .main-inner {
   max-width: 1400px;
   margin: 0 auto;
@@ -20,18 +28,76 @@
   justify-content: space-between;
   padding-top: 152px;
 }
+<<<<<<< HEAD
 .qulmee .main-block .main-inner .text {
   width: 63%;
+=======
+@media screen and (max-width: 767px) {
+  .qulmee .main-block .main-inner {
+    padding-top: 28.7179487179vw;
+    width: 90%;
+    flex-direction: column;
+    padding-bottom: 7.6923076923vw;
+  }
+}
+.qulmee .main-block .main-inner .text {
+  width: 65%;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .main-block .main-inner .text {
+    width: auto;
+    display: contents;
+  }
+>>>>>>> 01575f9 (main)
 }
 .qulmee .main-block .main-inner .text .logo {
   position: relative;
   left: -5%;
   top: -10%;
 }
+<<<<<<< HEAD
+=======
+@media screen and (max-width: 767px) {
+  .qulmee .main-block .main-inner .text .logo {
+    display: none;
+  }
+}
+.qulmee .main-block .main-inner .catch {
+  font-size: clamp(3vw, 68px, 4vw);
+  font-weight: bold;
+  color: #050000;
+  letter-spacing: 0.1em;
+  line-height: 1.8;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .main-block .main-inner .catch {
+    font-size: 7.4358974359vw;
+    letter-spacing: 0;
+    position: relative;
+    right: -2vw;
+    order: 1;
+    margin: 0;
+    margin-bottom: 19.2307692308vw;
+  }
+}
+.qulmee .main-block .main-inner .catch strong {
+  color: #60b5ff;
+}
+>>>>>>> 01575f9 (main)
 .qulmee .main-block .main-inner .img {
   width: 31.9285714286%;
   position: relative;
 }
+<<<<<<< HEAD
+=======
+@media screen and (max-width: 767px) {
+  .qulmee .main-block .main-inner .img {
+    width: 61.5384615385vw;
+    margin: 0 auto;
+    order: 2;
+  }
+}
+>>>>>>> 01575f9 (main)
 .qulmee .main-block .main-inner .img img {
   width: 100%;
   height: auto;
@@ -45,6 +111,7 @@
   width: clamp(3vw, 329px, 19vw);
   list-style: none;
 }
+<<<<<<< HEAD
 .qulmee .main-block .main-inner .catch {
   font-size: clamp(3vw, 68px, 4vw);
   font-weight: bold;
@@ -54,12 +121,42 @@
 }
 .qulmee .main-block .main-inner .catch strong {
   color: #60b5ff;
+=======
+@media screen and (max-width: 767px) {
+  .qulmee .main-block .main-inner .img .badges {
+    width: 55.8974358974vw;
+    right: -24%;
+    top: -11%;
+  }
+>>>>>>> 01575f9 (main)
 }
 .qulmee .main-block .main-inner .btns {
   display: flex;
   width: 100%;
   justify-content: center;
   gap: 17px;
+<<<<<<< HEAD
+=======
+  order: 3;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .main-block .main-inner .btns {
+    flex-direction: column;
+    width: 74.8717948718vw;
+    margin: 0 auto;
+    gap: 2.5641025641vw;
+  }
+}
+.qulmee .main-block .main-inner .btns .u-button {
+  width: clamp(7vw, 292px, 20vw);
+  font-size: clamp(0.9vw, 18px, 1.4vw);
+}
+@media screen and (max-width: 767px) {
+  .qulmee .main-block .main-inner .btns .u-button {
+    width: 100%;
+    font-size: 4.1025641026vw;
+  }
+>>>>>>> 01575f9 (main)
 }
 .qulmee .nav-qulmee {
   width: 95%;
@@ -76,20 +173,103 @@
   justify-content: space-between;
   align-items: center;
 }
+<<<<<<< HEAD
+=======
+@media screen and (max-width: 767px) {
+  .qulmee .nav-qulmee {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 4.6153846154vw;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    height: 12.0512820513vw;
+  }
+}
+>>>>>>> 01575f9 (main)
 .qulmee .nav-qulmee .logo {
   padding-top: 0;
   width: 9vw;
 }
+<<<<<<< HEAD
 .qulmee .nav-qulmee ul {
+=======
+@media screen and (max-width: 767px) {
+  .qulmee .nav-qulmee .logo {
+    width: 28.4615384615vw;
+    left: 2.8205128205vw;
+  }
+}
+.qulmee .nav-qulmee .sp-menu-open {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .nav-qulmee .sp-menu-open {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 5.641025641vw;
+    position: absolute;
+    right: 3.5897435897vw;
+    top: 3.3333333333vw;
+  }
+}
+.qulmee .nav-qulmee .sp-menu-open em {
+  display: block;
+  width: 6.1538461538vw;
+  height: 1.0256410256vw;
+  background-color: #fff;
+}
+.qulmee .nav-qulmee .menu {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 12vw);
+}
+@media screen and (max-width: 767px) {
+  .qulmee .nav-qulmee .menu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #60b5ff;
+    top: 11vw;
+    height: 100vh;
+  }
+  .qulmee .nav-qulmee .menu.show {
+    display: block;
+  }
+}
+.qulmee .nav-qulmee .menu ul {
+>>>>>>> 01575f9 (main)
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 50vw;
 }
+<<<<<<< HEAD
 .qulmee .nav-qulmee ul li {
   list-style: none;
 }
 .qulmee .nav-qulmee ul li a {
+=======
+@media screen and (max-width: 767px) {
+  .qulmee .nav-qulmee .menu ul {
+    display: block;
+    width: 100%;
+    padding: 20.5128205128vw 7.6923076923vw;
+  }
+}
+.qulmee .nav-qulmee .menu ul li {
+  list-style: none;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .nav-qulmee .menu ul li + li {
+    margin-top: 8.9743589744vw;
+  }
+}
+.qulmee .nav-qulmee .menu ul li a {
+>>>>>>> 01575f9 (main)
   color: #fff;
   font-weight: bold;
 }
@@ -99,10 +279,30 @@
   flex-shrink: 0;
   gap: 7px;
 }
+<<<<<<< HEAD
+=======
+@media screen and (max-width: 767px) {
+  .qulmee .nav-qulmee .btns {
+    width: 100%;
+    padding: 0vw 5.1282051282vw;
+    justify-content: center;
+  }
+}
+>>>>>>> 01575f9 (main)
 .qulmee .nav-qulmee .btns .u-button {
   width: clamp(7vw, 165px, 13vw);
   font-size: clamp(0.9vw, 16px, 1.2vw);
   padding: 0.5em 0;
+<<<<<<< HEAD
+=======
+}
+@media screen and (max-width: 767px) {
+  .qulmee .nav-qulmee .btns .u-button {
+    width: 48%;
+    font-size: 4.1025641026vw;
+    box-shadow: none !important;
+  }
+>>>>>>> 01575f9 (main)
 }
 .qulmee .main-block {
   color: red;
@@ -172,9 +372,12 @@
   display: inline-block;
   width: 15px;
   height: 24px;
-  mask-image: url(/assets/img/faq/icon-close.svg);
-  mask-repeat: no-repeat;
-  mask-size: contain;
+  -webkit-mask-image: url(/assets/img/faq/icon-close.svg);
+          mask-image: url(/assets/img/faq/icon-close.svg);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+          mask-size: contain;
   background-color: #EAEAEA;
   position: absolute;
   right: -60px;
@@ -256,6 +459,14 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+<<<<<<< HEAD
+=======
+@media screen and (max-width: 767px) {
+  .qulmee .main-block {
+    background-image: url("/assets/img/main/bg-sp.svg");
+  }
+}
+>>>>>>> 01575f9 (main)
 .qulmee .main-block .main-inner {
   max-width: 1400px;
   margin: 0 auto;
@@ -265,18 +476,76 @@
   justify-content: space-between;
   padding-top: 152px;
 }
+<<<<<<< HEAD
 .qulmee .main-block .main-inner .text {
   width: 63%;
+=======
+@media screen and (max-width: 767px) {
+  .qulmee .main-block .main-inner {
+    padding-top: 28.7179487179vw;
+    width: 90%;
+    flex-direction: column;
+    padding-bottom: 7.6923076923vw;
+  }
+}
+.qulmee .main-block .main-inner .text {
+  width: 65%;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .main-block .main-inner .text {
+    width: auto;
+    display: contents;
+  }
+>>>>>>> 01575f9 (main)
 }
 .qulmee .main-block .main-inner .text .logo {
   position: relative;
   left: -5%;
   top: -10%;
 }
+<<<<<<< HEAD
+=======
+@media screen and (max-width: 767px) {
+  .qulmee .main-block .main-inner .text .logo {
+    display: none;
+  }
+}
+.qulmee .main-block .main-inner .catch {
+  font-size: clamp(3vw, 68px, 4vw);
+  font-weight: bold;
+  color: #050000;
+  letter-spacing: 0.1em;
+  line-height: 1.8;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .main-block .main-inner .catch {
+    font-size: 7.4358974359vw;
+    letter-spacing: 0;
+    position: relative;
+    right: -2vw;
+    order: 1;
+    margin: 0;
+    margin-bottom: 19.2307692308vw;
+  }
+}
+.qulmee .main-block .main-inner .catch strong {
+  color: #60b5ff;
+}
+>>>>>>> 01575f9 (main)
 .qulmee .main-block .main-inner .img {
   width: 31.9285714286%;
   position: relative;
 }
+<<<<<<< HEAD
+=======
+@media screen and (max-width: 767px) {
+  .qulmee .main-block .main-inner .img {
+    width: 61.5384615385vw;
+    margin: 0 auto;
+    order: 2;
+  }
+}
+>>>>>>> 01575f9 (main)
 .qulmee .main-block .main-inner .img img {
   width: 100%;
   height: auto;
@@ -290,6 +559,7 @@
   width: clamp(3vw, 329px, 19vw);
   list-style: none;
 }
+<<<<<<< HEAD
 .qulmee .main-block .main-inner .catch {
   font-size: clamp(3vw, 68px, 4vw);
   font-weight: bold;
@@ -299,12 +569,42 @@
 }
 .qulmee .main-block .main-inner .catch strong {
   color: #60b5ff;
+=======
+@media screen and (max-width: 767px) {
+  .qulmee .main-block .main-inner .img .badges {
+    width: 55.8974358974vw;
+    right: -24%;
+    top: -11%;
+  }
+>>>>>>> 01575f9 (main)
 }
 .qulmee .main-block .main-inner .btns {
   display: flex;
   width: 100%;
   justify-content: center;
   gap: 17px;
+<<<<<<< HEAD
+=======
+  order: 3;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .main-block .main-inner .btns {
+    flex-direction: column;
+    width: 74.8717948718vw;
+    margin: 0 auto;
+    gap: 2.5641025641vw;
+  }
+}
+.qulmee .main-block .main-inner .btns .u-button {
+  width: clamp(7vw, 292px, 20vw);
+  font-size: clamp(0.9vw, 18px, 1.4vw);
+}
+@media screen and (max-width: 767px) {
+  .qulmee .main-block .main-inner .btns .u-button {
+    width: 100%;
+    font-size: 4.1025641026vw;
+  }
+>>>>>>> 01575f9 (main)
 }
 .qulmee .main-block {
   color: red;

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="390" height="767" viewBox="0 0 390 767">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.117" y1="0.047" x2="0.833" y2="0.898" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#53cefe"/>
+      <stop offset="1" stop-color="#49b2f4"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="長方形_379" data-name="長方形 379" width="390" height="729" opacity="0.37" fill="url(#linear-gradient)"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#bee6ff"/>
+    </linearGradient>
+  </defs>
+  <g id="bg-sp" transform="translate(12 -47)">
+    <rect id="長方形_378" data-name="長方形 378" width="390" height="767" transform="translate(-12 47)" fill="#e6f3ff"/>
+    <g id="bg-sp-2" data-name="bg-sp" transform="translate(-12 85)" clip-path="url(#clip-path)">
+      <g id="_26465722-01" data-name="26465722-01" transform="translate(-134.731 361.846)" opacity="0.044">
+        <g id="グループ_758" data-name="グループ 758" transform="translate(25.841 131.139)">
+          <path id="パス_719" data-name="パス 719" d="M760.094-126.964,571.215,3.737A46.148,46.148,0,0,1,506.173-9.449h0C491.8-31.513,497.56-61.682,518.966-76.493l188.878-130.7a46.148,46.148,0,0,1,65.042,13.186h0c14.369,22.064,8.613,52.233-12.792,67.044Z" transform="translate(-498.262 215.348)" fill="#00a0e9"/>
+        </g>
+        <g id="グループ_759" data-name="グループ 759" transform="translate(315.185 48.898)">
+          <path id="パス_720" data-name="パス 720" d="M831.686,124.372,609.247,278.3a4.861,4.861,0,0,1-6.855-1.39l-.25-.383a5.2,5.2,0,0,1,1.349-7.066L825.93,115.537a4.861,4.861,0,0,1,6.855,1.39l.25.383a5.2,5.2,0,0,1-1.349,7.066Z" transform="translate(-601.307 -114.677)" fill="#00a0e9"/>
+        </g>
+        <g id="グループ_760" data-name="グループ 760" transform="translate(0)">
+          <path id="パス_721" data-name="パス 721" d="M750.056-295.61,527.617-141.689a4.861,4.861,0,0,1-6.855-1.39l-.25-.383a5.2,5.2,0,0,1,1.349-7.066L744.3-304.453a4.86,4.86,0,0,1,6.855,1.39l.25.383a5.2,5.2,0,0,1-1.349,7.066Z" transform="translate(-519.677 305.313)" fill="#00a0e9"/>
+        </g>
+        <g id="グループ_761" data-name="グループ 761" transform="translate(396.238 69.914)">
+          <path id="パス_722" data-name="パス 722" d="M1194.814,110.566l-188.878,130.7a46.148,46.148,0,0,1-65.042-13.186h0c-14.369-22.064-8.613-52.233,12.792-67.044l188.875-130.7A46.148,46.148,0,0,1,1207.6,43.523h0c14.369,22.064,8.613,52.233-12.792,67.044Z" transform="translate(-932.982 -22.182)" fill="#00a0e9"/>
+        </g>
+      </g>
+      <g id="_26465722-01-2" data-name="26465722-01" transform="translate(308.586 582.817) rotate(180)" opacity="0.42">
+        <g id="グループ_759-2" data-name="グループ 759" transform="translate(121.658)">
+          <path id="パス_720-2" data-name="パス 720" d="M300.17,12.633,10.345,213.187a6.333,6.333,0,0,1-8.931-1.812l-.326-.5a6.778,6.778,0,0,1,1.758-9.206L292.67,1.121A6.333,6.333,0,0,1,301.6,2.933l.326.5a6.777,6.777,0,0,1-1.758,9.206Z" fill="url(#linear-gradient-2)"/>
+        </g>
+        <g id="グループ_761-2" data-name="グループ 761" transform="translate(0 70.326)">
+          <path id="パス_722-2" data-name="パス 722" d="M225.489,76.116,62.827,188.676A39.743,39.743,0,0,1,6.813,177.32h0c-12.374-19-7.417-44.983,11.017-57.738L180.488,7.023A39.743,39.743,0,0,1,236.5,18.379h0c12.374,19,7.417,44.983-11.017,57.738Z" fill="url(#linear-gradient-2)"/>
+        </g>
+      </g>
+      <g id="_26465722-01-3" data-name="26465722-01" transform="translate(-102.912 96.344)" opacity="0.42">
+        <g id="グループ_759-3" data-name="グループ 759" transform="translate(181.925 433.173)">
+          <path id="パス_720-3" data-name="パス 720" d="M1078.94,134.778,617.768,453.9a10.078,10.078,0,0,1-14.212-2.883l-.518-.794a10.784,10.784,0,0,1,2.8-14.649l461.172-319.116a10.078,10.078,0,0,1,14.212,2.883l.519.794a10.783,10.783,0,0,1-2.8,14.649Z" transform="translate(-601.307 -114.677)" fill="url(#linear-gradient-2)"/>
+        </g>
+        <g id="グループ_761-3" data-name="グループ 761" transform="translate(0)">
+          <path id="パス_722-3" data-name="パス 722" d="M1291.782,143.3,1032.953,322.4c-29.333,20.3-69.44,12.166-89.13-18.07h0c-19.69-30.235-11.8-71.577,17.53-91.873L1220.177,33.357c29.333-20.3,69.44-12.166,89.13,18.069h0c19.69,30.235,11.8,71.577-17.53,91.873Z" transform="translate(-932.982 -22.182)" fill="url(#linear-gradient-2)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
