@@ -1,5 +1,440 @@
-.about-block{
-    padding: 160px 25px 0 25px;
-    
-    
+.about-block {
+  .inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 25px;
+    @include mq {
+      padding: 0 vw(25);
+    }
+  }
+  .about-top {
+    background-image: url($pathImg + "about/bg.svg");
+    background-color: #afddff;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    padding: 160px 0 115px;
+    @include mq {
+      padding: vw(70) 0;
+      background-position: -20% bottom;
+    }
+    .title {
+      text-align: left;
+      margin-bottom: 20px;
+      .en {
+        color: #fff;
+        &:before {
+          background-color: #fff;
+        }
+      }
+    }
+    .lead {
+      font-size: 26px;
+      line-height: 1.8;
+      font-weight: bold;
+      margin-bottom: 80px;
+      @include mq {
+        font-size: vw(18);
+        margin-bottom: vw(40);
+      }
+    }
+    .fig-box {
+      display: flex;
+      gap: 3%;
+      @include mq {
+        flex-direction: column;
+      }
+      dl {
+        background-color: #fff;
+        position: relative;
+        border-radius: 20px;
+        text-align: center;
+        picture {
+          width: 100%;
+        }
+        img {
+          width: 100%;
+        }
+        dd {
+          margin: 0;
+          padding: 0;
+          @include mq {
+            text-align: left;
+            h3 {
+              font-size: vw(14);
+              display: inline-block;
+              padding: 0.5em 1em;
+              border-radius: 100px;
+              background-color: #49b2f4;
+              color: #fff;
+              margin-bottom: vw(10);
+              &.student {
+                background-color: #f88f02;
+              }
+            }
+            ul {
+              display: grid;
+              gap: 0.5em;
+              &.student {
+                li {
+                  &:before {
+                    color: #fff7cb;
+                  }
+                }
+              }
+              li {
+                line-height: 1.4;
+                display: flex;
+                font-size: vw(16);
+                .small {
+                  color: #aaaaaa;
+                  font-size: vw(12);
+                }
+                &:before {
+                  content: "●";
+                  font-size: vw(8);
+                  color: #afddff;
+                  position: relative;
+                  top: 0.5em;
+                  margin-right: 1em;
+                }
+              }
+            }
+          }
+        }
+        dt {
+          font-size: 22px;
+          font-weight: bold;
+          left: 0;
+          top: -1em;
+          color: #fff;
+          border-radius: 27px 27px 27px 0;
+          padding: 7px 35px;
+          position: absolute;
+          background-color: #49b2f4;
+          @include mq {
+            font-size: vw(16);
+          }
+        }
+        &.fig1 {
+          padding: 60px 40px 30px 60px;
+          @include mq {
+            padding: vw(45) vw(20) vw(38);
+          }
+        }
+        &.fig2 {
+          padding: 60px 55px 30px 37px;
+          @include mq {
+            padding: vw(45) vw(20) vw(38);
+          }
+        }
+      }
+    }
+  }
+  .about-bottom {
+    background-color: #f8f8f8;
+    padding: 150px 0 180px;
+    position: relative;
+    @include mq {
+      padding: vw(80) 0 ;
+    }
+    &:before {
+      width: 81px;
+      height: 59px;
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: calc(50% - 40.5px);
+      background-image: url($pathImg + "about/arrow.svg");
+    }
+    .title2 {
+      text-align: center;
+      color: #60b5ff;
+      font-size: 36px;
+      font-weight: bold;
+      @include mq {
+        font-size: vw(22);
+        margin-bottom: vw(60);
+      }
+      span {
+        display: inline-block;
+        position: relative;
+        &:before {
+          position: absolute;
+          left: 40%;
+          top: -1.5em;
+          font-size: 9px;
+          content: "●";
+          @include mq {
+            font-size: vw(6);
+          }
+        }
+      }
+      strong {
+        display: inline-flex;
+        align-items: center;
+        padding: 0 10px;
+        gap: 3px;
+        &::before {
+          position: relative;
+          top: -0.2em;
+          content: "";
+          display: inline-block;
+          width: 24px;
+          height: 32px;
+          transform: rotate(-180deg);
+          background-size: contain;
+          background-image: url($pathImg + "about/kakko.svg");
+          @include mq {
+            width: vw(18);
+            height: vw(24);
+          }
+        }
+        &::after {
+          position: relative;
+          top: 0.2em;
+          content: "";
+          display: inline-block;
+          width: 24px;
+          height: 32px;
+          background-size: contain;
+          background-image: url($pathImg + "about/kakko.svg");
+          @include mq {
+            width: vw(18);
+            height: vw(24);
+          }
+        }
+      }
+    }
+    .nayami-content {
+      position: relative;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url($pathImg + "about/logo.svg");
+      @include mq{
+        background-image: none;
+        &:before {
+          content: "";
+          position: absolute;
+          top: 110vw;
+          left: -3.5vw;
+          width: 95vw;
+          height: 95vw;
+          background-image: url($pathImg + "about/logo.svg");
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+        
+      }
+      .row {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        @include mq {
+          flex-direction: column;
+          gap: 0;
+          position: relative;
+        }
+        &.before {
+          @include mq {
+            background-color: #fff;
+            border: 4px solid #ededed;
+            border-radius: 20px;
+            position: relative;
+            padding: 8vw 4.5vw 5vw 4.5vw;
+            &:before {
+              content: "";
+              width: 30px;
+              height: 40px;
+              background-size: cover;
+              background-image: url($pathImg + "about/fukidashi.png");
+              display: block;
+              position: absolute;
+              left: 70%;
+              bottom: -35px;
+            }
+          }
+        }
+        &.after {
+          padding-top: 150px;
+          @include mq{
+            padding-top: 0;
+            background-color: #fff;
+            border: 4px solid #60B5FF;
+            border-radius: 20px;
+            position: relative;
+            padding: 5vw 4.5vw;
+            margin-top: vw(190);
+          }
+        }
+        .items {
+          display: flex;
+          position: relative;
+          width: 100%;
+          background-color: #fff;
+          border: 4px solid #ededed;
+          border-radius: 20px;
+          @include mq {
+            background-color: none;
+            border: none;
+            position: static;
+            margin: 0;
+            & + .items{
+              margin-top: vw(40);
+            }
+          }
+          dt {
+            position: absolute;
+            left: 0;
+            top: -15px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #b0b2b4;
+            padding: 5px 30px;
+            border-radius: 27px 27px 27px 0;
+            @include mq{
+              position: absolute;
+              left: -4px;
+              top: -.8em;
+            }
+            &.after {
+              background-color: #60b5ff;
+            }
+          }
+          dd {
+            display: flex;
+            gap: 20px;
+            padding: 45px 0px 35px 45px;
+            margin: 0;
+            width: 100%;
+            @include mq{
+              padding: 0;
+              flex-wrap: wrap;
+              align-items: center;
+            }
+            .img {
+              width: 23%;
+              flex-shrink: 0;
+              img {
+                width: 100%;
+              }
+            }
+            .text {
+              width: 78%;
+              @include mq{
+                display: contents;
+                width: 100%;
+              }
+              h3 {
+                font-size: 22px;
+                font-weight: bold;
+                margin: 0 0 20px;
+                @include mq{
+                  font-size: vw(18);
+                  margin: 0;
+                }
+              }
+              ul {
+                display: grid;
+                gap: 15px;
+                li {
+                  display: flex;
+                  align-items: flex-start;
+                  line-height: 1.4;
+                  @include mq{
+                    font-size: vw(16);
+                  }
+                  &:before {
+                    content: "●";
+                    font-size: 9px;
+                    color: #eaeaea;
+                    margin-top: 0.5em;
+                    margin-right: 1em;
+                  }
+                }
+              }
+              .atxt {
+                text-align: center;
+                color: #49b2f4;
+                display: block;
+                font-weight: bold;
+                margin-bottom: 10px;
+                @include mq{
+                  font-size: vw(18);
+                  line-height: 1.4;
+                  text-align: left;
+                  width: 60%;
+                  margin-bottom: 0;
+                }
+              }
+              .atxt2 {
+                font-size: 28px;
+                font-weight: bold;
+                text-align: center;
+                line-height: 1.7;
+                margin: 0;
+                @include mq{
+                  font-size: vw(20);
+                  line-height: 1.6;
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+        &.before {
+          .items {
+            &::before {
+              content: "";
+              width: 40px;
+              height: 51px;
+              background-image: url($pathImg + "about/fukidashi.png");
+              display: block;
+              position: absolute;
+              left: 48%;
+              bottom: -45px;
+              @include mq {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .about-swiper {
+    background-image: url($pathImg + "about/bg-bottom.svg");
+    padding: 106px 50px;
+    @include mq {
+      padding: vw(35) vw(50);
+    }
+    .swiper-slide {
+      width: 500px;
+      text-align: center;
+      img {
+        border-radius: 20px;
+        overflow: hidden;
+      }
+      figcaption {
+        top: -1em;
+
+        font-size: 17px;
+        line-height: 1;
+        padding: 0.5em 2em;
+        text-align: center;
+        color: #fff;
+        border-radius: 100px;
+        background-color: #ff9149;
+        position: relative;
+        z-index: 2;
+        width: auto;
+        display: inline-block;
+
+        @include mq {
+          font-size: vw(14);
+        }
+      }
+    }
+  }
 }

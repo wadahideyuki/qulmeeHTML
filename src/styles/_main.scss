@@ -55,7 +55,7 @@
       }
     }
     .img {
-      width: percentage(447 / 1400);
+      width: percentage(math.div(1038, 1400));
       position: relative;
       @include mq {
         width: vw(240);
