@@ -10,20 +10,13 @@
 .qulmee .main-block {
   color: red;
 }
-.qulmee body {
-  font-family: "Zen Kaku Gothic New", "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
-  font-weight: 500;
-  font-size: 1.6rem;
-  color: #363636;
-  background-color: #fff;
-}
 .qulmee .faq-block {
-  padding: 25px;
+  padding: 190px 25px;
   background-color: #EBF6FD;
   color: #000000;
 }
 .qulmee .faq-block .title {
-  font-size: 44px;
+  margin-bottom: 90px;
   text-align: center;
 }
 .qulmee .faq-block .qa-list {
@@ -35,7 +28,7 @@
   gap: 20px;
 }
 .qulmee .faq-block .qa-list .qa-box {
-  padding: 30px 120px 50px 110px;
+  padding: 35px 120px 35px 110px;
   background-color: #ffffff;
   border-radius: 10px;
   font-size: 20px;
@@ -44,6 +37,7 @@
 }
 .qulmee .faq-block .qa-list .qa-box .q-item {
   position: relative;
+  font-family: "Noto Sans JP";
 }
 .qulmee .faq-block .qa-list .qa-box .q-item::before {
   content: "Q";

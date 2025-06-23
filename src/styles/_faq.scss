@@ -1,21 +1,11 @@
 // .main-block{
 //     color: red;
 // }
-body {
-  font-family: "Zen Kaku Gothic New", "Helvetica Neue", "Helvetica",
-    "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo",
-    sans-serif;
-  font-weight: 500;
-  font-size: 1.6rem;
-  color: #363636;
-  background-color: #fff;
-}
-
 .faq-block{
-    padding: 25px;
+    padding: 190px 25px;
     background-color: #EBF6FD;
     .title{
-        font-size: 44px;
+        margin-bottom: 90px;
         text-align: center;
     }
 
@@ -27,7 +17,7 @@ body {
         flex-direction: column;
         gap: 20px;
         .qa-box{
-            padding: 30px 120px 50px 110px;
+            padding: 35px 120px 35px 110px;
             background-color: #ffffff;
             border-radius: 10px;
             font-size: 20px;
@@ -35,6 +25,7 @@ body {
             line-height: 2.2;
             .q-item{
                 position: relative;
+                font-family: 'Noto Sans JP';
                 &::before{
                     content: "Q";
                     position: absolute;
