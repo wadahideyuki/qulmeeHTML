@@ -32,6 +32,11 @@
   margin-bottom: 90px;
   text-align: center;
 }
+@media screen and (max-width: 767px) {
+  .qulmee .faq-block .title {
+    margin-bottom: 23.0769230769vw;
+  }
+}
 .qulmee .faq-block .qa-list {
   max-width: 1400px;
   width: 100%;
@@ -39,6 +44,11 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .faq-block .qa-list {
+    gap: 5.1282051282vw;
+  }
 }
 .qulmee .faq-block .qa-list .qa-box {
   padding: 35px 120px 35px 110px;
@@ -89,13 +99,18 @@
     width: 3.3333333333vw;
     height: 7.6923076923vw;
     top: 0%;
-    right: -8%;
+    right: -7%;
   }
 }
 .qulmee .faq-block .qa-list .qa-box .a-item {
   display: none;
   margin-top: 40px;
   position: relative;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .faq-block .qa-list .qa-box .a-item {
+    margin-top: 10.2564102564vw;
+  }
 }
 .qulmee .faq-block .qa-list .qa-box .a-item::before {
   content: "A";
