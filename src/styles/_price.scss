@@ -7,7 +7,7 @@
     position: relative;
     @include mq{
         background-image: none;
-        padding: vw(110) 0 vw(100) 0;
+        padding: vw(110) 0 vw(60) 0;
     }
     &::before{
         @include mq{
@@ -33,7 +33,7 @@
             background-repeat: no-repeat;
             background-size: contain;
             position: absolute;
-            bottom: -7%;
+            bottom: -14%;
             left: 0%;
         }
     }
@@ -54,6 +54,8 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            background-color: #ffffff;
+            z-index: 2;
             @include mq{
                 padding: vw(50) vw(30) vw(50) vw(30);
                 // border: none;
@@ -107,11 +109,14 @@
             }
 
             .plan-dl{
-                max-width: 310px;
+                // max-width: 310px;
                 width: 100%;
-                padding: 0 25px;
+                padding: 0 77px;
                 display: flex;
                 justify-content: space-between;
+                @media (max-width:1200px){
+                    padding: 0 18%;
+                }
                 @include mq{
                     max-width: vw(530);
                     padding: 0 vw(25) 0 vw(38);

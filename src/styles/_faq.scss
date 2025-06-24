@@ -4,6 +4,8 @@
 .faq-block{
     padding: 190px 25px;
     background-color: #EBF6FD;
+    z-index: 2;
+    position: relative;
     @include mq{
         padding: vw(100) vw(25);
     }

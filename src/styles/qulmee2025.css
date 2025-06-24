@@ -779,6 +779,8 @@
 .qulmee .faq-block {
   padding: 190px 25px;
   background-color: #EBF6FD;
+  z-index: 2;
+  position: relative;
   color: #000000;
 }
 @media screen and (max-width: 767px) {
@@ -838,12 +840,9 @@
   display: inline-block;
   width: 15px;
   height: 24px;
-  -webkit-mask-image: url(/assets/img/faq/icon-close.svg);
-          mask-image: url(/assets/img/faq/icon-close.svg);
-  -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
-  -webkit-mask-size: contain;
-          mask-size: contain;
+  mask-image: url(/assets/img/faq/icon-close.svg);
+  mask-repeat: no-repeat;
+  mask-size: contain;
   background-color: #EAEAEA;
   position: absolute;
   right: -60px;
@@ -1237,7 +1236,7 @@
 @media screen and (max-width: 767px) {
   .qulmee .price-block {
     background-image: none;
-    padding: 28.2051282051vw 0 25.641025641vw 0;
+    padding: 28.2051282051vw 0 15.3846153846vw 0;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1264,7 +1263,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    bottom: -7%;
+    bottom: -14%;
     left: 0%;
   }
 }
@@ -1288,6 +1287,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #ffffff;
+  z-index: 2;
 }
 @media screen and (max-width: 767px) {
   .qulmee .price-block .plan-ul .plan-li {
@@ -1345,11 +1346,15 @@
   font-size: 3.5897435897vw;
 }
 .qulmee .price-block .plan-ul .plan-li .plan-dl {
-  max-width: 310px;
   width: 100%;
-  padding: 0 25px;
+  padding: 0 77px;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 1200px) {
+  .qulmee .price-block .plan-ul .plan-li .plan-dl {
+    padding: 0 18%;
+  }
 }
 @media screen and (max-width: 767px) {
   .qulmee .price-block .plan-ul .plan-li .plan-dl {
@@ -1600,12 +1605,9 @@
   width: 25px;
   height: 18px;
   margin-right: 10px;
-  -webkit-mask-image: url("/assets/img/title-detail.svg");
-          mask-image: url("/assets/img/title-detail.svg");
-  -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
-  -webkit-mask-size: contain;
-          mask-size: contain;
+  mask-image: url("/assets/img/title-detail.svg");
+  mask-repeat: no-repeat;
+  mask-size: contain;
   background-color: #49b2f4;
 }
 @media screen and (max-width: 767px) {
