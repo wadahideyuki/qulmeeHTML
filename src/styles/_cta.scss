@@ -1,11 +1,11 @@
 .cta-block{
     padding: 250px 25px 120px 25px;
-    background-image: url('/assets/img/cta/bg.png');
+    background-image: url('/wp-content/themes/corpo-site/assets/img/qulmee2025/cta/bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     @include mq{
         padding: vw(140) vw(25) vw(210) vw(25);
-        background-image: url('/assets/img/cta/bg-sp.png');
+        background-image: url('/wp-content/themes/corpo-site/assets/img/qulmee2025/cta/bg-sp.png');
     }
     .cta-contents{
         max-width: 1200px;

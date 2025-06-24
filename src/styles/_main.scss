@@ -1,9 +1,9 @@
 .main-block {
-  background-image: url($pathImg + "main/bg.svg");
+  background-image: url( "/wp-content/themes/corpo-site/assets/img/qulmee2025/main/bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
   @include mq {
-    background-image: url($pathImg + "main/bg-sp.svg");
+    background-image: url( "/wp-content/themes/corpo-site/assets/img/qulmee2025/main/bg-sp.svg");
   }
   .main-inner {
     max-width: 1400px;

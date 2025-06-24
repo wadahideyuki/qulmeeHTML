@@ -8,7 +8,7 @@
     }
   }
   .about-top {
-    background-image: url($pathImg + "about/bg.svg");
+    background-image: url( "/wp-content/themes/corpo-site/assets/img/qulmee2025/about/bg.svg");
     background-color: #afddff;
     background-repeat: no-repeat;
     background-position: right bottom;
@@ -145,7 +145,7 @@
       position: absolute;
       top: 0;
       left: calc(50% - 40.5px);
-      background-image: url($pathImg + "about/arrow.svg");
+      background-image: url( "/wp-content/themes/corpo-site/assets/img/qulmee2025/about/arrow.svg");
     }
     .title2 {
       text-align: center;
@@ -184,7 +184,7 @@
           height: 32px;
           transform: rotate(-180deg);
           background-size: contain;
-          background-image: url($pathImg + "about/kakko.svg");
+          background-image: url( "/wp-content/themes/corpo-site/assets/img/qulmee2025/about/kakko.svg");
           @include mq {
             width: vw(18);
             height: vw(24);
@@ -198,7 +198,7 @@
           width: 24px;
           height: 32px;
           background-size: contain;
-          background-image: url($pathImg + "about/kakko.svg");
+          background-image: url( "/wp-content/themes/corpo-site/assets/img/qulmee2025/about/kakko.svg");
           @include mq {
             width: vw(18);
             height: vw(24);
@@ -210,7 +210,7 @@
       position: relative;
       background-repeat: no-repeat;
       background-position: center;
-      background-image: url($pathImg + "about/logo.svg");
+      background-image: url( "/wp-content/themes/corpo-site/assets/img/qulmee2025/about/logo.svg");
       @include mq{
         background-image: none;
         &:before {
@@ -220,7 +220,7 @@
           left: -3.5vw;
           width: 95vw;
           height: 95vw;
-          background-image: url($pathImg + "about/logo.svg");
+          background-image: url( "/wp-content/themes/corpo-site/assets/img/qulmee2025/about/logo.svg");
           background-size: contain;
           background-repeat: no-repeat;
         }
@@ -247,7 +247,7 @@
               width: 30px;
               height: 40px;
               background-size: cover;
-              background-image: url($pathImg + "about/fukidashi.png");
+              background-image: url( "/wp-content/themes/corpo-site/assets/img/qulmee2025/about/fukidashi.png");
               display: block;
               position: absolute;
               left: 70%;
@@ -389,7 +389,7 @@
               content: "";
               width: 40px;
               height: 51px;
-              background-image: url($pathImg + "about/fukidashi.png");
+              background-image: url( "/wp-content/themes/corpo-site/assets/img/qulmee2025/about/fukidashi.png");
               display: block;
               position: absolute;
               left: 48%;
@@ -404,7 +404,7 @@
     }
   }
   .about-swiper {
-    background-image: url($pathImg + "about/bg-bottom.svg");
+    background-image: url( "/wp-content/themes/corpo-site/assets/img/qulmee2025/about/bg-bottom.svg");
     padding: 106px 50px;
     @include mq {
       padding: vw(35) vw(50);
