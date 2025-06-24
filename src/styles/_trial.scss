@@ -82,9 +82,6 @@
                 margin-bottom: 50px;
                 display: flex;
                 gap: 80px;
-                @media(max-width: 1024px){
-                    // flex-direction: column;
-                }
                 @include mq{
                     width: vw(230);
                     margin-bottom: vw(50);
@@ -92,6 +89,9 @@
                     gap: vw(15);
                 }
                 .explanation-li{
+                @media(max-width: 1024px){
+                    flex: 1;
+                }
                     .explanation-group{
                         display: flex;
                         dt{
