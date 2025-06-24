@@ -59,6 +59,7 @@
   color: #050000;
   letter-spacing: 0.1em;
   line-height: 1.8;
+  text-align: center;
 }
 @media screen and (max-width: 767px) {
   .qulmee .main-block .main-inner .catch {
@@ -75,7 +76,7 @@
   color: #60b5ff;
 }
 .qulmee .main-block .main-inner .img {
-  width: 74.1428571429%;
+  width: 31.9285714286%;
   position: relative;
 }
 @media screen and (max-width: 767px) {
@@ -91,8 +92,8 @@
 }
 .qulmee .main-block .main-inner .img .badges {
   position: absolute;
-  right: -7%;
-  top: -10%;
+  right: -23%;
+  top: -7.6%;
   display: flex;
   gap: 7px;
   width: clamp(3vw, 329px, 19vw);
@@ -1062,6 +1063,7 @@
   color: #050000;
   letter-spacing: 0.1em;
   line-height: 1.8;
+  text-align: center;
 }
 @media screen and (max-width: 767px) {
   .qulmee .main-block .main-inner .catch {
@@ -1078,7 +1080,7 @@
   color: #60b5ff;
 }
 .qulmee .main-block .main-inner .img {
-  width: 74.1428571429%;
+  width: 31.9285714286%;
   position: relative;
 }
 @media screen and (max-width: 767px) {
@@ -1094,8 +1096,8 @@
 }
 .qulmee .main-block .main-inner .img .badges {
   position: absolute;
-  right: -7%;
-  top: -10%;
+  right: -23%;
+  top: -7.6%;
   display: flex;
   gap: 7px;
   width: clamp(3vw, 329px, 19vw);
@@ -1785,19 +1787,19 @@
 .qulmee .main-block {
   color: red;
 }
-.qulmee .trial-block {
+.qulmee .cta-block {
   padding: 250px 25px 120px 25px;
-  background-image: url("/assets/img/trial/bg.png");
+  background-image: url("/assets/img/cta/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media screen and (max-width: 767px) {
-  .qulmee .trial-block {
+  .qulmee .cta-block {
     padding: 35.8974358974vw 6.4102564103vw 53.8461538462vw 6.4102564103vw;
-    background-image: url("/assets/img/trial/bg-sp.png");
+    background-image: url("/assets/img/cta/bg-sp.png");
   }
 }
-.qulmee .trial-block .trial-contents {
+.qulmee .cta-block .cta-contents {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
@@ -1806,12 +1808,12 @@
   gap: 5%;
 }
 @media screen and (max-width: 767px) {
-  .qulmee .trial-block .trial-contents {
+  .qulmee .cta-block .cta-contents {
     grid-template-columns: 1fr;
     gap: 20%;
   }
 }
-.qulmee .trial-block .trial-contents .trial-group {
+.qulmee .cta-block .cta-contents .cta-group {
   padding: 70px 20px 50px 20px;
   background-color: #ffffff;
   border-radius: 20px;
@@ -1821,45 +1823,45 @@
   align-items: center;
 }
 @media screen and (max-width: 767px) {
-  .qulmee .trial-block .trial-contents .trial-group {
+  .qulmee .cta-block .cta-contents .cta-group {
     padding: 15.3846153846vw 6.4102564103vw 8.9743589744vw 6.4102564103vw;
   }
 }
-.qulmee .trial-block .trial-contents .trial-group .pcsp-img,
-.qulmee .trial-block .trial-contents .trial-group .materials-img {
+.qulmee .cta-block .cta-contents .cta-group .pcsp-img,
+.qulmee .cta-block .cta-contents .cta-group .materials-img {
   position: absolute;
   top: -40%;
   left: 50%;
   transform: translate(-50%, 0);
 }
 @media screen and (max-width: 767px) {
-  .qulmee .trial-block .trial-contents .trial-group .pcsp-img,
-  .qulmee .trial-block .trial-contents .trial-group .materials-img {
+  .qulmee .cta-block .cta-contents .cta-group .pcsp-img,
+  .qulmee .cta-block .cta-contents .cta-group .materials-img {
     top: -30%;
   }
 }
 @media screen and (max-width: 767px) {
-  .qulmee .trial-block .trial-contents .trial-group .pcsp-img {
+  .qulmee .cta-block .cta-contents .cta-group .pcsp-img {
     width: 53.8461538462vw;
   }
 }
 @media screen and (max-width: 767px) {
-  .qulmee .trial-block .trial-contents .trial-group .materials-img {
+  .qulmee .cta-block .cta-contents .cta-group .materials-img {
     width: 29.4871794872vw;
   }
 }
-.qulmee .trial-block .trial-contents .trial-group .more {
+.qulmee .cta-block .cta-contents .cta-group .more {
   margin-bottom: 35px;
   font-size: 20px;
 }
 @media screen and (max-width: 767px) {
-  .qulmee .trial-block .trial-contents .trial-group .more {
+  .qulmee .cta-block .cta-contents .cta-group .more {
     margin-bottom: 8.9743589744vw;
     font-size: 4.6153846154vw;
   }
 }
 @media screen and (max-width: 767px) {
-  .qulmee .trial-block .trial-contents .trial-group .u-button {
+  .qulmee .cta-block .cta-contents .cta-group .u-button {
     width: 100%;
   }
 }

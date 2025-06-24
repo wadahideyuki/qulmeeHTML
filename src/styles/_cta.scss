@@ -1,3 +1,67 @@
-.main-block{
-    color: red;
+.cta-block{
+    padding: 250px 25px 120px 25px;
+    background-image: url('/assets/img/cta/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include mq{
+        padding: vw(140) vw(25) vw(210) vw(25);
+        background-image: url('/assets/img/cta/bg-sp.png');
+    }
+    .cta-contents{
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5%;
+        @include mq{
+            grid-template-columns: 1fr;
+            gap: 20%;
+        }
+        .cta-group{
+            padding: 70px 20px 50px 20px;
+            background-color: #ffffff;
+            border-radius: 20px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include mq{
+                padding: vw(60) vw(25) vw(35) vw(25);
+            }
+            .pcsp-img,
+            .materials-img{
+                position: absolute;
+                top: -40%;
+                left: 50%;
+                transform: translate(-50%,0);
+                @include mq{
+                    top: -30%;
+                }
+            }
+            .pcsp-img{
+                @include mq{
+                    width: vw(210);
+                }
+            }
+            .materials-img{
+                @include mq{
+                    width: vw(115);
+                }
+            }
+            .more{
+                margin-bottom: 35px;
+                font-size: 20px;
+                @include mq{
+                    margin-bottom: vw(35);
+                    font-size: vw(18);
+                }
+            }
+            .u-button{
+                @include mq{
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
