@@ -40,19 +40,23 @@ export default defineConfig({
     }),
   ],
   build: {
+    cssCodeSplit: false, // CSSを1つにまとめる（必要に応じて）
     rollupOptions: {
       input: {
         main: path.resolve(__dirname, "index.html"),
-        // map: path.resolve(__dirname, "equipment/map.html"),
-        // payment: path.resolve(__dirname, "payment/index.html"),
-        // login: path.resolve(__dirname, "login/index.html"),
-        // password: path.resolve(__dirname, "password/index.html"),
-        // pwnew: path.resolve(__dirname, "password/new.html"),
-        // pwconf: path.resolve(__dirname, "password/confirm.html"),
-        // page: path.resolve(__dirname, "page.html"),
+      },
+      output: {
+        entryFileNames: "assets/js/qulmee2025.js",
+        assetFileNames: (assetInfo) => {
+          if (assetInfo.name && assetInfo.name.endsWith(".css")) {
+            return "assets/css/qulmee2025.css";
+          }
+          return "assets/[ext]/[name]-[hash][extname]";
+        },
       },
     },
   },
+
   server: {
     host: "0.0.0.0",
   },
