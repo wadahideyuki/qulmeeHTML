@@ -919,8 +919,96 @@
 .qulmee .faq-block dd {
   margin: 0;
 }
-.qulmee .main-block {
-  color: red;
+.qulmee .flow-block {
+  padding: 220px 25px;
+  background-color: #EBF6FD;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .flow-block {
+    padding: 24.358974359vw 6.4102564103vw 23.0769230769vw 6.4102564103vw;
+  }
+}
+.qulmee .flow-block .step-ul {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .flow-block .step-ul {
+    flex-direction: column;
+  }
+}
+.qulmee .flow-block .step-ul .step-li {
+  flex: 1;
+  padding: 80px 3% 50px 3%;
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .flow-block .step-ul .step-li {
+    padding: 17.9487179487vw 14.1025641026vw;
+  }
+}
+.qulmee .flow-block .step-ul .step-li .title {
+  text-align: center;
+  font-size: 27px;
+  font-weight: 700;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .flow-block .step-ul .step-li .title {
+    font-size: 5.1282051282vw;
+  }
+}
+.qulmee .flow-block .step-ul .step-li .text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .flow-block .step-ul .step-li .text {
+    font-size: 4.1025641026vw;
+  }
+}
+.qulmee .flow-block .step-ul .step-li .border-img {
+  width: 17%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  right: -6%;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .flow-block .step-ul .step-li .border-img {
+    display: none;
+  }
+}
+.qulmee .flow-block .step-ul .step-li .border-sp-img {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .flow-block .step-ul .step-li .border-sp-img {
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: -3%;
+    left: 0%;
+  }
+}
+.qulmee .flow-block .step-ul .step-li .no01-img, .qulmee .flow-block .step-ul .step-li .no02-img, .qulmee .flow-block .step-ul .step-li .no03-img, .qulmee .flow-block .step-ul .step-li .no04-img, .qulmee .flow-block .step-ul .step-li .no05-img {
+  position: absolute;
+  top: -11%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+@media screen and (max-width: 767px) {
+  .qulmee .flow-block .step-ul .step-li .no01-img, .qulmee .flow-block .step-ul .step-li .no02-img, .qulmee .flow-block .step-ul .step-li .no03-img, .qulmee .flow-block .step-ul .step-li .no04-img, .qulmee .flow-block .step-ul .step-li .no05-img {
+    width: 13.5897435897vw;
+    height: 13.5897435897vw;
+    top: 50%;
+    left: -6%;
+    transform: translate(0, -50%);
+  }
 }
 .qulmee .main-block {
   background-image: url("/assets/img/main/bg.svg");
