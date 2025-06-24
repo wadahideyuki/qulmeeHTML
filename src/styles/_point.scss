@@ -1,3 +1,190 @@
-.main-block{
-    color: red;
+.point-block {
+  padding: 170px 25px 150px ;
+  background-image: url($pathImg + "/point/bg.svg");
+  background-position: left top;
+  background-repeat: no-repeat;
+  @include mq{
+    padding: vw(80) vw(25);
+  }
+
+  .point-list {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    gap: 130px;
+    @include mq{
+        gap: vw(45);
+    }
+    li {
+      display: flex;
+      justify-content: space-between;
+      line-height: 1.6;
+      @include mq{
+        flex-direction: column;
+      }
+      .text {
+        width: 53%;
+        @include mq{
+            width: 100%;
+        }
+        h3 {
+          font-size: 30px;
+          position: relative;
+          margin-bottom: 0.7em;
+          @include mq{
+            font-size: vw(20);
+          }
+          &:before {
+            content: "";
+            width: 19px;
+            height: 19px;
+            border-radius: 0 20px 20px 0;
+            position: absolute;
+            left: -0.5em;
+            top: -0.4em;
+            background-color: #60b5ff;
+            @include mq{
+                top: -.8em;
+            }
+          }
+        }
+        p{
+            @include mq{
+                font-size: vw(16);
+            }
+        }
+      }
+      .img {
+        width: 40%;
+        position: relative;
+        @include mq{
+          width: 100%;
+          margin-top: vw(10);
+        }
+        .ph {
+          position: relative;
+          z-index: 2;
+        }
+        .num {
+          position: absolute;
+          right: -170px;
+          top: 30px;
+          @include mq{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .box {
+    border-radius: 40px;
+    background-color: #e5f4ff;
+    padding: clamp(3vw,110px,5vw);
+    max-width: 1600px;
+    margin: 195px auto 0 auto;
+    width: 100%;
+    font-weight: bold;
+    @include mq{
+        width: 100vw;
+        margin: vw(40) vw(-25);
+        padding-bottom: vw(50);
+    }
+    .box-top {
+      display: flex;
+      line-height: 1.7;
+      @include mq{
+        flex-direction: column-reverse;
+      }
+      h3 {
+        font-size: 36px;
+        margin-bottom: 0.5em;
+        @include mq{
+            font-size: vw(20);
+        }
+      }
+      .text {
+        width: 40%;
+        @include mq{
+            width: 100%;
+            font-size: vw(16);
+        }
+        strong {
+          font-size: 26px;
+          display: block;
+        @include mq{
+            font-size: vw(20);
+        }
+        }
+      }
+      
+      .img {
+        width: 60%;
+        @include mq{
+            width: 100%;
+        }
+      }
+    }
+    .box-bottom {
+      background-color: #fff;
+      border-radius: 20px;
+      line-height: 1.7;
+      display: flex;
+      padding: 45px 45px 45px 28%;
+      position: relative;
+      justify-content: space-between;
+      align-items: center;
+      @media (max-width: 1280px) {
+        flex-direction: column;
+        gap: 20px;
+        padding-left: 300px;
+      }
+      @include mq{
+        flex-direction: column;
+        padding: 0 vw(25) vw(25) vw(25);
+        margin-top: vw(20);
+      }
+      p {
+        margin: 0;
+        font-size: 25px;
+        @include mq{
+            font-size: vw(18);
+        }
+      }
+
+      .img {
+        position: absolute;
+        bottom: 20px;
+        left: 5%;
+        width: 20%;
+        min-width: 200px;
+
+        @media (max-width: 1280px) {
+          bottom: auto;
+          top: 50%;
+          margin-top: -5vw;
+        }
+        @include mq{
+            position: static;
+            margin-top: -30px;
+        }
+      }
+      .u-button {
+        height: 57px;
+        background-color: #60b5ff;
+        border: 0;
+        padding: 0 2em;
+        justify-content: space-between;
+        &:after {
+          content: "";
+          width: 0.7em;
+          height: 0.7em;
+          display: inline-block;
+          transform: rotate(-45deg);
+          border-right: 4px solid #fff;
+          border-bottom: 4px solid #fff;
+        }
+      }
+    }
+  }
 }
