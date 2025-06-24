@@ -3,7 +3,7 @@
     background-image: url("/assets/img/trial/bg.png");
     background-size: cover;
     color: #ffffff;
-    @media(max-width: 1040px){
+    @media(max-width: 1024px){
         padding: 120px 25px 120px 25px;
     }
     @include mq{
@@ -15,7 +15,7 @@
         margin: 0 auto;
         display: flex;
         justify-content: center;
-        @media(max-width: 1040px){
+        @media(max-width: 1024px){
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -34,7 +34,7 @@
             @media(max-width: 1324px){
                 margin-top: 200px;
             }
-            @media(max-width: 1040px){
+            @media(max-width: 1024px){
                 margin: 0;
                 position: static;
                 order: 4;
@@ -47,7 +47,7 @@
             max-width: 820px;
             width: 100%;
             padding-bottom: 100px;
-            @media(max-width: 1040px){
+            @media(max-width: 1024px){
                 display: contents;
             }
             position: relative;
@@ -65,7 +65,7 @@
                 font-size: 26px;
                 font-weight: 700;
                 line-height: 2;
-                @media(max-width: 1040px){
+                @media(max-width: 1024px){
                     padding-bottom: 45px;
                     margin-bottom: 50px;
                     width: 100%;
@@ -82,7 +82,7 @@
                 margin-bottom: 50px;
                 display: flex;
                 gap: 80px;
-                @media(max-width: 1040px){
+                @media(max-width: 1024px){
                     // flex-direction: column;
                 }
                 @include mq{
@@ -132,7 +132,7 @@
                 max-width: 540px;
                 width: 100%;
                 margin: 0 auto;
-                @media(max-width: 1040px){
+                @media(max-width: 1024px){
                     max-width: none;
                     order: 5;
                 }
