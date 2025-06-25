@@ -1,8 +1,15 @@
 @charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+}
+
 .qulmee {
   font-weight: 500;
   font-size: 18px;
   color: #050000;
+}
+.qulmee .qulmee-content {
+  background-color: #FFF;
 }
 .qulmee .qulmee-content * {
   font-family: Zen Kaku Gothic New, sans-serif;
@@ -46,6 +53,7 @@
 .qulmee .main-block .main-inner .text .logo {
   position: relative;
   left: -5%;
+  text-align: left;
   top: -10%;
 }
 @media screen and (max-width: 767px) {
@@ -192,7 +200,8 @@
 .qulmee .nav-qulmee .menu {
   display: flex;
   justify-content: space-between;
-  width: calc(100% - 12vw);
+  gap: 4%;
+  margin-left: auto;
 }
 @media screen and (max-width: 767px) {
   .qulmee .nav-qulmee .menu {
@@ -211,7 +220,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 50vw;
+  width: 55vw;
 }
 @media screen and (max-width: 767px) {
   .qulmee .nav-qulmee .menu ul {
@@ -424,6 +433,7 @@
   text-align: center;
   color: #60b5ff;
   font-size: 36px;
+  margin-bottom: 50px;
   font-weight: bold;
 }
 @media screen and (max-width: 767px) {
@@ -542,7 +552,7 @@
   }
 }
 .qulmee .about-block .about-bottom .nayami-content .row.after {
-  padding-top: 150px;
+  padding-top: 160px;
 }
 @media screen and (max-width: 767px) {
   .qulmee .about-block .about-bottom .nayami-content .row.after {
@@ -654,7 +664,7 @@
   content: "●";
   font-size: 9px;
   color: #eaeaea;
-  margin-top: 0.5em;
+  margin-top: 0.7em;
   margin-right: 1em;
 }
 .qulmee .about-block .about-bottom .nayami-content .row .items dd .text .atxt {
@@ -742,9 +752,10 @@
   color: red;
 }
 .qulmee .cta-mid {
-  background-image: url(/assets/img/about/bg-bottom.svg);
+  background-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/about/bg-bottom.svg");
   text-align: center;
   padding: 80px 25px;
+  background-size: cover;
 }
 @media screen and (max-width: 767px) {
   .qulmee .cta-mid {
@@ -808,6 +819,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-weight: bold;
 }
 @media screen and (max-width: 767px) {
   .qulmee .cta-block .cta-contents .cta-group {
@@ -893,7 +905,6 @@
 }
 .qulmee .faq-block .qa-list .qa-box .q-item {
   position: relative;
-  font-family: "Noto Sans JP";
 }
 .qulmee .faq-block .qa-list .qa-box .q-item::before {
   content: "Q";
@@ -916,17 +927,23 @@
   display: inline-block;
   width: 15px;
   height: 24px;
-  mask-image: url(/assets/img/faq/icon-close.svg);
-  mask-repeat: no-repeat;
-  mask-size: contain;
+  -webkit-mask-image: url(/wp-content/themes/corpo-site/assets/img/qulmee2025/faq/icon-close.svg);
+          mask-image: url(/wp-content/themes/corpo-site/assets/img/qulmee2025/faq/icon-close.svg);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+          mask-size: contain;
   background-color: #EAEAEA;
   position: absolute;
   right: -60px;
+  top: 50%;
+  margin-top: -0.5em;
   transform: rotate(90deg);
 }
 @media screen and (max-width: 767px) {
   .qulmee .faq-block .qa-list .qa-box .q-item::after {
     width: 3.3333333333vw;
+    margin-top: 0;
     height: 7.6923076923vw;
     top: 0%;
     right: -7%;
@@ -1125,6 +1142,7 @@
 .qulmee .main-block .main-inner .text .logo {
   position: relative;
   left: -5%;
+  text-align: left;
   top: -10%;
 }
 @media screen and (max-width: 767px) {
@@ -1263,6 +1281,9 @@
     margin-bottom: 10.2564102564vw;
   }
 }
+.qulmee .merit-block .inner .title .txt {
+  margin-bottom: 10px;
+}
 .qulmee .merit-block .inner .title img {
   width: 100%;
   max-width: 260px;
@@ -1297,6 +1318,7 @@
   font-size: 26px;
   font-weight: bold;
   margin: 0.8em 0 0.6em;
+  letter-spacing: -0.04em;
 }
 @media screen and (max-width: 767px) {
   .qulmee .merit-block .inner .merit-list dt {
@@ -1339,33 +1361,57 @@
     display: block;
   }
 }
-.qulmee .news-block .news-inner .title {
+.qulmee .news-block .news-inner .title-box {
   width: 25.8571428571%;
 }
 @media screen and (max-width: 767px) {
-  .qulmee .news-block .news-inner .title {
+  .qulmee .news-block .news-inner .title-box {
     width: auto;
     margin-bottom: 10.2564102564vw;
   }
 }
+.qulmee .news-block .news-inner .title-box .title {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .news-block .news-inner .title-box .title {
+    text-align: center;
+    display: block;
+  }
+}
 .qulmee .news-block .news-inner .news-content {
   width: 74.1428571429%;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 5%;
   font-weight: bold;
 }
 @media screen and (max-width: 767px) {
   .qulmee .news-block .news-inner .news-content {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     width: 100%;
     align-items: center;
     justify-content: center;
     gap: 7.6923076923vw;
   }
 }
+.qulmee .news-block .news-inner .news-content a:hover img {
+  transform: scale(1.05);
+}
+.qulmee .news-block .news-inner .news-content picture {
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+  height: auto;
+}
 .qulmee .news-block .news-inner .news-content img {
   border-radius: 20px;
+  transition: 0.3s;
   width: 100%;
+  aspect-ratio: 489/278;
 }
 .qulmee .news-block .news-inner .news-content .date {
   color: #60b5ff;
@@ -1381,6 +1427,7 @@
 .qulmee .news-block .news-inner .news-content .description {
   line-height: 1.6;
   margin: 0;
+  color: #050000;
 }
 @media screen and (max-width: 767px) {
   .qulmee .news-block .news-inner .news-content .description {
@@ -1389,7 +1436,7 @@
 }
 .qulmee .point-block {
   padding: 170px 25px 150px;
-  background-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025//point/bg.svg");
+  background-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/point/bg.svg");
   background-position: left top;
   background-repeat: no-repeat;
 }
@@ -1645,7 +1692,7 @@
     display: block;
     width: 100%;
     height: 120.102564vw;
-    background-image: url(/assets/img/price/bg-sp-bottom.png);
+    background-image: url(/wp-content/themes/corpo-site/assets/img/qulmee2025/price/bg-sp-bottom.png);
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
@@ -1976,7 +2023,8 @@
 }
 @media screen and (max-width: 767px) {
   .qulmee .trial-block .trial-wrap .trial-contents .explanation-ul {
-    width: 58.9743589744vw;
+    width: 62vw;
+    line-height: 1.2;
     margin-bottom: 12.8205128205vw;
     flex-direction: column;
     gap: 3.8461538462vw;
@@ -2013,6 +2061,7 @@
 .qulmee .trial-block .trial-wrap .trial-contents .explanation-ul .explanation-li .explanation-group dd {
   font-size: 26px;
   font-weight: 700;
+  width: 100%;
 }
 @media screen and (max-width: 767px) {
   .qulmee .trial-block .trial-wrap .trial-contents .explanation-ul .explanation-li .explanation-group dd {
@@ -2090,9 +2139,15 @@
 }
 .qulmee .school-block .slider-ul .slider-li .slid-box {
   height: 100%;
+  display: block;
+  color: #050000;
+  text-align: left;
   padding: 10%;
   border-radius: 20px;
   background-color: #ffffff;
+}
+.qulmee .school-block .slider-ul .slider-li .slid-box:hover img {
+  transform: scale(1.05);
 }
 @media screen and (max-width: 767px) {
   .qulmee .school-block .slider-ul .slider-li .slid-box {
@@ -2114,7 +2169,9 @@
 .qulmee .school-block .slider-ul .slider-li .slid-box figure.slid-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.3s;
 }
 .qulmee .school-block .slider-ul .slider-li .slid-box figure.slid-img .img-text {
   padding: 10px 20px;
@@ -2175,6 +2232,9 @@
   font-size: 16px;
   color: #49B2F4;
 }
+.qulmee .school-block .more-wrap a.more:hover {
+  opacity: 0.7;
+}
 @media screen and (max-width: 767px) {
   .qulmee .school-block .more-wrap a.more {
     font-size: 3.5897435897vw;
@@ -2186,9 +2246,12 @@
   margin-left: 20px;
   width: 11px;
   height: 16px;
-  mask-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/school/more.svg");
-  mask-repeat: no-repeat;
-  mask-size: contain;
+  -webkit-mask-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/school/more.svg");
+          mask-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/school/more.svg");
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+          mask-size: contain;
   background-color: #49B2F4;
 }
 @media screen and (max-width: 767px) {
@@ -2215,9 +2278,12 @@
     display: inline-block;
     width: 5.3846153846vw;
     height: 10.2564102564vw;
-    mask-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/school/next.svg");
-    mask-repeat: no-repeat;
-    mask-size: contain;
+    -webkit-mask-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/school/next.svg");
+            mask-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/school/next.svg");
+    -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+            mask-size: contain;
     background-color: #AFDDFF;
     position: absolute;
     right: -100%;
@@ -2235,9 +2301,12 @@
     display: inline-block;
     width: 5.3846153846vw;
     height: 10.2564102564vw;
-    mask-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/school/prev.svg");
-    mask-repeat: no-repeat;
-    mask-size: contain;
+    -webkit-mask-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/school/prev.svg");
+            mask-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/school/prev.svg");
+    -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+            mask-size: contain;
     background-color: #AFDDFF;
     position: absolute;
     left: -100%;
@@ -2302,9 +2371,12 @@
   width: 25px;
   height: 18px;
   margin-right: 10px;
-  mask-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/title-detail.svg");
-  mask-repeat: no-repeat;
-  mask-size: contain;
+  -webkit-mask-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/title-detail.svg");
+          mask-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/title-detail.svg");
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+          mask-size: contain;
   background-color: #49b2f4;
 }
 @media screen and (max-width: 767px) {
@@ -2336,6 +2408,10 @@
   border: 3px solid #ff9149;
   background-color: #ff9149;
   color: #fff;
+  transition: 0.5s;
+}
+.qulmee .u-button:hover {
+  filter: brightness(1.2);
 }
 .qulmee .u-button.download {
   background-color: #fff;

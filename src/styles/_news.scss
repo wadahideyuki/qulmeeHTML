@@ -14,28 +14,54 @@
     @include mq {
       display: block;
     }
-    .title {
+    .title-box {
       width: percentage(math.div(362, 1400));
       @include mq {
         width: auto;
         margin-bottom: vw(40);
       }
+      .title{display: inline-flex
+;
+    flex-direction: column;
+    align-items: flex-start;
+        @include mq{
+          text-align: center;
+          display: block;
+        }
+      }
     }
     .news-content {
       width: percentage(math.div(1038, 1400));
-      display: flex;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       gap: 5%;
       font-weight: bold;
       @include mq {
-        flex-direction: column;
+      grid-template-columns: 1fr;
         width: 100%;
         align-items: center;
         justify-content: center;
         gap: vw(30);
       }
+      a{
+        &:hover{
+          img{
+            transform: scale(1.05);
+          }
+        }
+      }
+      picture{
+        overflow: hidden;
+        display: block;
+        width: 100%;
+        border-radius: 20px;
+        height: auto;
+      }
       img {
         border-radius: 20px;
+        transition: .3s;
         width: 100%;
+        aspect-ratio: 489 / 278;
       }
       .date {
         color: #60b5ff;
@@ -49,6 +75,7 @@
       .description {
         line-height: 1.6;
         margin: 0;
+        color: #050000;
         @include mq{
           font-size: vw(14);
         }

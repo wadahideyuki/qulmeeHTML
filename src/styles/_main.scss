@@ -28,6 +28,7 @@
       .logo {
         position: relative;
         left: -5%;
+        text-align: left;
         top: -10%;
         @include mq {
           display: none;

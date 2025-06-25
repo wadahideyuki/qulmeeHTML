@@ -78,7 +78,7 @@
   <div class="wrapper container"> {{> header}} <main class="qulmee-content">
       <section class="main-block">{{> main}}</section>
       <nav class="nav-qulmee">
-        <div class="logo"><img src="/wp-content/themes/corpo-site/assets/img/qulmee2025//main/logo_w.svg" alt=""></div>
+        <div class="logo"><img src="/wp-content/themes/corpo-site/assets/img/qulmee2025/main/logo_w.svg" alt=""></div>
         <span class="sp-menu-open">
           <em></em>
           <em></em>
@@ -94,31 +94,31 @@
             <li><a href="#section6">よくあるご質問</a></li>
           </ul>
           <div class="btns">
-            <a href="" class="u-button white">無料トライアル</a>
-            <a href="" class="u-button bd">資料ダウンロード</a>
+            <a href="{{trialUrl}}" class="u-button white">無料トライアル</a>
+            <a href="{{downloadUrl}}" class="u-button bd">資料ダウンロード</a>
           </div>
         </div>
       </nav>
       <section class="news-block">{{> news}}</section>
-      <section class="about-block">{{> about}}</section>
-      <section class="merit-block">{{> merit}}</section>
+      <section class="about-block" id="section1">{{> about}}</section>
+      <section class="merit-block" id="section2">{{> merit}}</section>
       <article class="cta-mid">
         <p class="more">まずは無料でお試しください</p>
         <ul>
           <li>
-            <a href="" class="u-button ">無料トライアル</a>
+            <a href="{{trialUrl}}" class="u-button ">無料トライアル</a>
           </li>
           <li class="trial-group">
-            <a href="" class="u-button download">資料ダウンロード</a>
+            <a href="{{downloadUrl}}" class="u-button download">資料ダウンロード</a>
           </li>
         </ul>
       </article>
-      <section class="point-block">{{> point}}</section>
-      <section class="school-block">{{> school}}</section>
+      <section class="point-block" id="section3">{{> point}}</section>
+      <section class="school-block" id="section4">{{> school}}</section>
       <section class="trial-block">{{> trial}}</section>
-      <section class="flow-block">{{> flow}}</section>
+      <section class="flow-block" id="section5">{{> flow}}</section>
       <section class="price-block">{{> price}}</section>
-      <section class="faq-block">{{> faq}}</section>
+      <section class="faq-block" id="section6">{{> faq}}</section>
       <section class="main-block">{{> case}}</section>
       <section class="main-block">{{> solution}}</section>
       <section class="cta-block">{{> cta}}</section>

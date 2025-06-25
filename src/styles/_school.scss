@@ -37,9 +37,17 @@
             }
             .slid-box{
                 height: 100%;
+                display: block;
+                color: #050000;
+                text-align: left;
                 padding: 10%;
                 border-radius: 20px;
                 background-color: #ffffff;
+                &:hover{
+                    img{
+                        transform: scale(1.05);
+                    }
+                }
                 @include mq{
                     padding: vw(30) vw(20) vw(40) vw(20);
                 }
@@ -56,6 +64,7 @@
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
+                        transition: .3s;
                     }
                     .img-text{
                         padding: 10px 20px;
@@ -110,6 +119,9 @@
             align-items: center;
             font-size: 16px;
             color: #49B2F4;
+            &:hover{
+                opacity: .7;
+            }
             @include mq{
                 font-size: vw(14);
             }

@@ -83,7 +83,8 @@
                 display: flex;
                 gap: 80px;
                 @include mq{
-                    width: vw(230);
+                    width: 62vw;
+                    line-height: 1.2;
                     margin-bottom: vw(50);
                     flex-direction: column;
                     gap: vw(15);
@@ -115,6 +116,7 @@
                         dd{
                             font-size: 26px;
                             font-weight: 700;
+                            width: 100%;
                             @include mq{
                                 font-size: vw(18);
                             }

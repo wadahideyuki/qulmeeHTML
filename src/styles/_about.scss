@@ -151,6 +151,7 @@
       text-align: center;
       color: #60b5ff;
       font-size: 36px;
+      margin-bottom: 50px;
       font-weight: bold;
       @include mq {
         font-size: vw(22);
@@ -256,7 +257,7 @@
           }
         }
         &.after {
-          padding-top: 150px;
+          padding-top: 160px;
           @include mq{
             padding-top: 0;
             background-color: #fff;
@@ -349,7 +350,7 @@
                     content: "●";
                     font-size: 9px;
                     color: #eaeaea;
-                    margin-top: 0.5em;
+                    margin-top: 0.7em;
                     margin-right: 1em;
                   }
                 }

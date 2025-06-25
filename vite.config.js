@@ -3,7 +3,9 @@ import handlebars from "vite-plugin-handlebars";
 import VitePluginWebpAndPath from "vite-plugin-webp-and-path-devide";
 import path from "path";
 
-const imageDir = "/assets/img/"; // 画像のディレクトリを設定
+const imageDir = "/wp-content/themes/corpo-site/assets/img/qulmee2025/"; // 画像のディレクトリを設定
+const trialUrl = "/supports/contact/form03/"; // 画像のディレクトリを設定
+const downloadUrl = "/supports/download/#catalog"; // 画像のディレクトリを設定
 
 export default defineConfig({
   resolve: {
@@ -19,6 +21,8 @@ export default defineConfig({
       partialDirectory: path.resolve(__dirname, "src/partials"),
       context: {
         imagePath: imageDir, // context内でimagePathを設定
+        trialUrl: trialUrl, //
+        downloadUrl: downloadUrl, //
       },
       helpers: {
         // カスタムヘルパー 'times' を定義
@@ -32,7 +36,7 @@ export default defineConfig({
       },
     }),
     VitePluginWebpAndPath({
-      targetDir: "./dist/assets/img/", // デフォルトは './dist/'
+      targetDir: "./dist/wp-content/themes/corpo-site/assets/img/qulmee2025/", // デフォルトは './dist/'
       textDir: "./dist/", // デフォルトは './dist/'
       imgExtensions: "jpg,png", // デフォルトは 'jpg,png'
       textExtensions: "html,css", // デフォルトは 'html,css'

@@ -1,7 +1,8 @@
 .cta-mid {
-  background-image: url(/assets/img/about/bg-bottom.svg);
+  background-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/about/bg-bottom.svg");
   text-align: center;
   padding: 80px 25px;
+  background-size: cover;
   @include mq {
     padding: vw(50) vw(40);
   }

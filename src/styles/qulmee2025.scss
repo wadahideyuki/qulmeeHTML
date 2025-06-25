@@ -12,9 +12,14 @@ $vw: 100vw;
     @content;
   }
 }
-
+html{
+  scroll-behavior: smooth;
+}
 
 .qulmee {
+.qulmee-content{
+  background-color: #FFF;
+}
   .qulmee-content * {
     font-family: Zen Kaku Gothic New, sans-serif;
   }
@@ -113,6 +118,10 @@ $vw: 100vw;
     border: 3px solid #ff9149;
     background-color: #ff9149;
     color: #fff;
+    transition: .5s;
+    &:hover{
+      filter: brightness(1.2);
+    }
     &.download {
       background-color: #fff;
       color: #ff9149;

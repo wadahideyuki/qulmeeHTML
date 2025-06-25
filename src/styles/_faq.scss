@@ -32,7 +32,6 @@
             }
             .q-item{
                 position: relative;
-                font-family: 'Noto Sans JP';
                 &::before{
                     content: "Q";
                     position: absolute;
@@ -52,15 +51,18 @@
                     display: inline-block;
                     width: 15px;
                     height: 24px;
-                    mask-image: url(/assets/img/faq/icon-close.svg);
+                    mask-image: url(/wp-content/themes/corpo-site/assets/img/qulmee2025/faq/icon-close.svg);
                     mask-repeat: no-repeat;
                     mask-size: contain;
                     background-color: #EAEAEA;
                     position: absolute;
                     right: -60px;
+                    top: 50%;
+                    margin-top: -.5em;
                     transform: rotate(90deg);
                     @include mq{
                         width: vw(13);
+                        margin-top: 0;
                         height: vw(30);
                         top: 0%;
                         right: -7%;

@@ -24,10 +24,12 @@ const aboutSwiper = new Swiper(".about-swiper", {
       slidesPerView: 2,
     },
     1024: {
-      slidesPerView: 3,
+      slidesPerView: "auto",
+      spaceBetween: 50,
+      centeredSlides: false,
     },
     1400: {
-      slidesPerView: 4,
+      slidesPerView: "auto",
       spaceBetween: 50,
       centeredSlides: false,
     },
@@ -36,6 +38,7 @@ const aboutSwiper = new Swiper(".about-swiper", {
 
 //SPだけスライダー
 let spSwiper = null;
+
 function toggleSwiper() {
   const isSp = window.innerWidth <= 1024;
 
@@ -46,37 +49,29 @@ function toggleSwiper() {
       grabCursor: true,
       centeredSlides: true,
       allowTouchMove: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
     });
   } else if (!isSp && spSwiper) {
     spSwiper.destroy(true, true); // 完全に破棄
     spSwiper = null;
 
-    // 🔧 Swiperが追加した余計なstyleを削除
+    // Swiperが追加した余計なstyleを削除
     const wrapper = document.querySelector(".about-sp-swiper .swiper-wrapper");
     if (wrapper) {
       wrapper.removeAttribute("style");
     }
 
-    // 🔧 スライドにもstyleが残っている場合があるので念のため削除
     document.querySelectorAll(".swiper-slide").forEach((slide) => {
       slide.removeAttribute("style");
     });
   }
 }
+
 // 初期化
 toggleSwiper();
+
 // リサイズ時に切り替え
 window.addEventListener("resize", toggleSwiper);
-
-//矢印
-spSwiper = new Swiper(".about-sp-swiper", {
-  slidesPerView: 1,
-  spaceBetween: 20,
-  grabCursor: true,
-  centeredSlides: true,
-  allowTouchMove: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
