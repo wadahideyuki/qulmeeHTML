@@ -63,9 +63,20 @@ function toggleSwiper() {
     });
   }
 }
-
 // 初期化
 toggleSwiper();
-
 // リサイズ時に切り替え
 window.addEventListener("resize", toggleSwiper);
+
+//矢印
+spSwiper = new Swiper(".about-sp-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  grabCursor: true,
+  centeredSlides: true,
+  allowTouchMove: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
