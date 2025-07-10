@@ -6,7 +6,7 @@
     background-image: url( "/wp-content/themes/corpo-site/assets/img/qulmee2025/main/bg-sp.svg");
   }
   .main-inner {
-    max-width: 1400px;
+    max-width: 1500px;
     margin: 0 auto;
     width: 85%;
     position: relative;
@@ -14,10 +14,10 @@
     justify-content: space-between;
     padding-top: 152px;
     @include mq {
-      padding-top: vw(112);
+      padding-top:10vw;
       width: 90%;
       flex-direction: column;
-      padding-bottom: vw(30);
+      padding-bottom: vw(50);
     }
     .text {
       width: 65%;

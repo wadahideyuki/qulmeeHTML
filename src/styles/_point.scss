@@ -1,9 +1,9 @@
 .point-block {
-  padding: 170px 25px 150px ;
-  background-image: url( "/wp-content/themes/corpo-site/assets/img/qulmee2025/point/bg.svg");
+  padding: clamp(90px, 10vw, 180px) 50px;
+  background-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/point/bg.svg");
   background-position: left top;
   background-repeat: no-repeat;
-  @include mq{
+  @include mq {
     padding: vw(80) vw(25);
   }
 
@@ -12,27 +12,37 @@
     width: 100%;
     margin: 0 auto;
     display: grid;
-    gap: 130px;
-    @include mq{
-        gap: vw(45);
+    gap: clamp(50px, 8vw, 130px);
+    @include mq {
+      gap: vw(45);
     }
     li {
       display: flex;
       justify-content: space-between;
       line-height: 1.6;
-      @include mq{
+      @include mq {
         flex-direction: column;
       }
       .text {
         width: 53%;
-        @include mq{
-            width: 100%;
+
+        @media screen and (max-width: 1300px) {
+          width: 43%;
+        }
+        @include mq {
+          width: 100%;
         }
         h3 {
           font-size: 30px;
           position: relative;
           margin-bottom: 0.7em;
-          @include mq{
+          @include mql {
+            font-size: 26px;
+          }
+          @include mqm {
+            font-size: 22px;
+          }
+          @include mq {
             font-size: vw(20);
           }
           &:before {
@@ -44,33 +54,47 @@
             left: -0.5em;
             top: -0.4em;
             background-color: #60b5ff;
-            @include mq{
-                top: -.8em;
+            @include mq {
+              top: -0.8em;
             }
           }
         }
-        p{
-            @include mq{
-                font-size: vw(16);
-            }
+        p {
+          @include mq {
+            font-size: vw(16);
+          }
         }
       }
       .img {
-        width: 40%;
+        width: 52%;
         position: relative;
-        @include mq{
+        margin-right: -12%;
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: 1300px) {
+          margin-right: 0px;
+        }
+        @include mq {
           width: 100%;
           margin-top: vw(10);
         }
         .ph {
           position: relative;
           z-index: 2;
+          width: clamp(200px, 35vw, 390px);
+          @include mql {
+            border-radius: 10px;
+            overflow: hidden;
+          }
+          @include mq {
+            width: 100%;
+          }
         }
         .num {
-          position: absolute;
-          right: -170px;
-          top: 30px;
-          @include mq{
+          right: 00px;
+          width: clamp(200px, 20vw, 265px);
+          margin-left: -14%;
+          @include mq {
             display: none;
           }
         }
@@ -80,48 +104,62 @@
   .box {
     border-radius: 40px;
     background-color: #e5f4ff;
-    padding: clamp(3vw,110px,5vw);
+    padding: clamp(3vw, 110px, 5vw);
     max-width: 1600px;
-    margin: 195px auto 0 auto;
+    margin: clamp(80px, 13vw, 195px) auto 0 auto;
     width: 100%;
     font-weight: bold;
-    @include mq{
-        width: 100vw;
-        margin: vw(40) vw(-25);
-        padding-bottom: vw(50);
+    @include mql {
+      border-radius: 10px;
+    }
+    @include mq {
+      width: 100vw;
+      margin: vw(100) vw(-25) vw(40) vw(-25);
+      padding-bottom: vw(50);
     }
     .box-top {
       display: flex;
       line-height: 1.7;
-      @include mq{
+      justify-content: space-between;
+      @include mq {
         flex-direction: column-reverse;
       }
       h3 {
         font-size: 36px;
         margin-bottom: 0.5em;
-        @include mq{
-            font-size: vw(20);
+        @include mql {
+          font-size: 20px;
+        }
+        @include mq {
+          font-size: vw(20);
         }
       }
       .text {
         width: 40%;
-        @include mq{
-            width: 100%;
-            font-size: vw(16);
+        @media screen and (max-width: 1100px) {
+          width: 60%;
+        }
+        @include mq {
+          width: 100%;
+          font-size: vw(16);
         }
         strong {
           font-size: 26px;
           display: block;
-        @include mq{
+          @include mql {
+            font-size: 20px;
+          }
+          @include mq {
             font-size: vw(20);
-        }
+          }
         }
       }
-      
+
       .img {
-        width: 60%;
-        @include mq{
-            width: 100%;
+        width: 55%;
+        max-width: 757px;
+        @include mq {
+          width: 100%;
         }
       }
     }
@@ -134,12 +172,18 @@
       position: relative;
       justify-content: space-between;
       align-items: center;
+      .susume{
+        color: #1489d1;
+      }
+      @include mql {
+        border-radius: 10px;
+      }
       @media (max-width: 1280px) {
         flex-direction: column;
         gap: 20px;
         padding-left: 300px;
       }
-      @include mq{
+      @include mq {
         flex-direction: column;
         padding: 0 vw(25) vw(25) vw(25);
         margin-top: vw(20);
@@ -147,26 +191,33 @@
       p {
         margin: 0;
         font-size: 25px;
-        @include mq{
-            font-size: vw(18);
+        @include mql {
+          font-size: 20px;
+          br{
+            display: none;
+          }
+        }
+        @include mq {
+          font-size: vw(18);
         }
       }
 
       .img {
         position: absolute;
-        bottom: 20px;
+        bottom: -20px;
         left: 5%;
         width: 20%;
         min-width: 200px;
+        max-width: 301px;
 
         @media (max-width: 1280px) {
           bottom: auto;
           top: 50%;
           margin-top: -5vw;
         }
-        @include mq{
-            position: static;
-            margin-top: -30px;
+        @include mq {
+          position: static;
+          margin-top: -30px;
         }
       }
       .u-button {

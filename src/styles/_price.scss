@@ -1,5 +1,5 @@
 .price-block{
-    padding: 215px 25px 155px 25px;
+    padding: clamp(90px , 10vw,180px) 50px;
     font-weight: 700;
     background-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/price/bg.png");
     background-repeat: no-repeat;
@@ -43,12 +43,12 @@
         margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 5vw;
-        @media (max-width:1200px){
+        gap: clamp(20px,4vw,60px) ;
+        @include mq{
             grid-template-columns: 1fr;
         }
         .plan-li{
-            padding: 55px 60px;
+            padding: clamp(20px,3vw,55px) ;
             border-radius: 20px;
             border: 1px solid #C7C7C7;
             display: flex;
@@ -56,6 +56,9 @@
             align-items: center;
             background-color: #ffffff;
             z-index: 2;
+      @include mql{
+        border-radius: 10px;
+      }
             @include mq{
                 padding: vw(50) vw(30) vw(50) vw(30);
                 // border: none;
@@ -65,6 +68,7 @@
                 max-width: 374px;
                 height: 54px;
                 margin-bottom: 40px;
+                margin-top: 0;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -156,6 +160,9 @@
                 }
                 .td01{
                     width: 40%;
+                    @include mqm{
+                        width: 15%;
+                    }
                     @include mq{
                         width: 100%;
                     }

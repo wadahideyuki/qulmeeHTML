@@ -3,30 +3,28 @@
   max-width: 1600px;
   border-radius: 10px;
   margin: -25px auto 0 auto;
-  position: relative;
+  position: sticky;
+  top: 20px;
   z-index: 2;
   background-color: #60b5ff;
   display: flex;
-  padding: 22px 40px;
-  font-size: clamp(0.9vw, 18px, 1.2vw);
+  padding: 22px clamp(15px,3vw,40px);
+  font-size: clamp(0.9vw, 20px, 1.3vw);
   gap: clamp(1vw, 20px, 2vw);
   justify-content: space-between;
   align-items: center;
+z-index: 10;
   @include mq {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
     font-size: vw(18);
-    margin: 0;
-    padding: 0;
-    border-radius: 0;
+    margin: -5vw auto 0 auto;
     height: vw(47);
+    top: 3vw;
   }
   .logo {
     padding-top: 0;
-    width: 9vw;
+    display: none;
     @include mq {
+      display: block;
       width: vw(111);
       left: vw(11);
     }
@@ -52,15 +50,18 @@
   .menu {
     display: flex;
     justify-content: space-between;
-    gap: 4%;
-    margin-left: auto;
+    width: 100%;
+    gap: 5%;
     @include mq {
       display: none;
       position: absolute;
       width: 100%;
       background-color: #60b5ff;
-      top: 11vw;
-      height: 100vh;
+      top: 10vw;
+        left: 0vw;
+      height: auto;
+      padding-bottom: 10vw;
+      border-radius: 0 0 10px 10px;
       &.show{display: block;}
 
     }
@@ -69,7 +70,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 55vw;
+    gap: 3%;
+    width: 100%;
     @include mq {
       display: block;
       width: 100%;
@@ -77,6 +79,7 @@
     }
     li {
       list-style: none;
+      
       @include mq{
         & + li{margin-top: vw(35);}
       }
@@ -88,7 +91,6 @@
   }
   .btns {
     display: flex;
-    width: 22vw;
     flex-shrink: 0;
     gap: 7px;
     @include mq{

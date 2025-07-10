@@ -1,194 +1,210 @@
 .school-block {
-    padding: 210px 25px;
-    background-color: rgb(211, 211, 211);
-    background-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/school/bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    @include mq{
-        padding: vw(120) vw(25);
-            background-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/school/bg-sp.png");
+  padding: clamp(90px, 10vw, 180px) 50px;
+  background-color: rgb(211, 211, 211);
+  background-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/school/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  overflow: hidden;
+  @include mq {
+    padding: vw(120) vw(25);
+    background-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/school/bg-sp.png");
+  }
+  .slider-ul {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    gap: clamp(30px, 5vw, 60px);
+    @media (max-width: 1024px) {
+      gap: 0;
     }
-    .slider-ul{
-        max-width: 1600px;
+    @include mq {
+      margin-bottom: vw(25);
+    }
+    .slider-li {
+      // width: 32%;
+      // flex-shrink: 1;
+      flex: 1;
+      @media (max-width: 1024px) {
+        // flex-shrink: 0;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: auto;
+        width: 60vw;
+      }
+      @include mq {
+        max-width: none;
         width: 100%;
-        margin: 0 auto;
-        margin-bottom: 25px;
-        display: flex;
-        justify-content: space-between;
-        gap: 5%;
-        @media(max-width: 1024px) {
-            gap: 0;
+      }
+      .slid-box {
+        height: 100%;
+        display: block;
+        color: #050000;
+        text-align: left;
+        padding: 10%;
+        border-radius: 20px;
+        background-color: #ffffff;
+        @include mql {
+          border-radius: 10px;
         }
-        @include mq{
-            margin-bottom: vw(25);
+        &:hover {
+          img {
+            transform: scale(1.05);
+          }
         }
-        .slider-li{
-            // width: 32%;
-            // flex-shrink: 1;
-            flex: 1;
-            @media(max-width: 1024px) {
-                // flex-shrink: 0;
-                flex-grow: 0;
-                flex-shrink: 0;
-                flex-basis: auto;
-            }
-            @include mq{
-                max-width: none;
-            }
-            .slid-box{
-                height: 100%;
-                display: block;
-                color: #050000;
-                text-align: left;
-                padding: 10%;
-                border-radius: 20px;
-                background-color: #ffffff;
-                &:hover{
-                    img{
-                        transform: scale(1.05);
-                    }
-                }
-                @include mq{
-                    padding: vw(30) vw(20) vw(40) vw(20);
-                }
-                figure.slid-img{
-                    margin-bottom: 20px;
-                    overflow: hidden;
-                    border-radius: 20px;
-                    position: relative;
-                    @include mq{
-                        margin-bottom: vw(20);
-                        border-radius: 10px;
-                    }
-                    img{
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                        transition: .3s;
-                    }
-                    .img-text{
-                        padding: 10px 20px;
-                        background-color: #60B5FF;
-                        color: #ffffff;
-                        border-radius: 0 0 20px 0;
-                        position: absolute;
-                        top: 0%;
-                        left: 0%;
-                        font-size: 15px;
-                        @include mq{
-                            padding: vw(10) vw(20);
-                            font-size: vw(12);
-                        }
-                    }
-                }
-                .title{
-                    margin: 0;
-                    margin-bottom: 20px;
-                    font-size: 26px;
-                    font-weight: 700;
-                    @media(max-width: 1300px) {
-                        font-size: 21px;
-                    }
-                    @include mq{
-                        margin-bottom: vw(20);
-                        font-size: vw(20);
-                    }
-                }
-                .text{
-                    margin: 0;
-                    margin-bottom: 20px;
-                    font-size: 18px;
-                    font-weight: 400;
-                    line-height: 1.7;
-                    @include mq{
-                        margin-bottom: vw(20);
-                        font-size: vw(16);
-                    }
-                }
-            }
+        @include mq {
+          padding: vw(30) vw(20) vw(40) vw(20);
         }
-    }
-    .more-wrap{
-        max-width: 1600px;
-        width: 100%;
-        margin: 0 auto; 
-        display: flex;
-        justify-content: flex-end;
-        a.more{
-            display: flex;
-            align-items: center;
-            font-size: 16px;
-            color: #49B2F4;
-            &:hover{
-                opacity: .7;
+        figure.slid-img {
+          margin-bottom: 20px;
+          overflow: hidden;
+          border-radius: 20px;
+          position: relative;
+      @include mql{
+        border-radius: 10px;
+      }
+          @include mq {
+            margin-bottom: vw(20);
+            border-radius: 10px;
+          }
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.3s;
+          }
+          .img-text {
+            padding: 10px 20px;
+            background-color: #60b5ff;
+            color: #ffffff;
+            border-radius: 0 0 20px 0;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            font-size: 15px;
+            @include mql {
+              border-radius: 0 0 10px 0;
             }
-            @include mq{
-                font-size: vw(14);
+            @include mq {
+              padding: vw(10) vw(20);
+              font-size: vw(12);
             }
-            &::after{
-                content: "";
-                display: inline-block;
-                margin-left: 20px;
-                width: 11px;
-                height: 16px;
-                mask-image: url('/wp-content/themes/corpo-site/assets/img/qulmee2025/school/more.svg');
-                mask-repeat: no-repeat;
-                mask-size: contain;
-                background-color: #49B2F4;
-                @include mq{
-                    width: vw(12);
-                    height: vw(18);
+          }
+        }
+        .title {
+          margin: 0;
+          margin-bottom: 20px;
+          font-size: 26px;
+          font-weight: 700;
+          @media (max-width: 1300px) {
+            font-size: 21px;
+          }
+          @include mq {
+            margin-bottom: vw(20);
+            font-size: vw(20);
+          }
+        }
+        .text {
+          margin: 0;
+          margin-bottom: 20px;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 1.7;
+                @include mql{
+                    font-size: 16px;
                 }
-            }
+          @include mq {
+            margin-bottom: vw(20);
+            font-size: vw(16);
+          }
         }
+      }
     }
-    //スライダー
-    .swiper-slide {
-        height: auto !important;
-    }
-    .swiper{
-        overflow: visible;
-    }
-    .swiper-button-next{
-        display: none;
-        @media(max-width: 1024px) {
-            display: block;
-            &:after{
-                content: "";
-                display: inline-block;
-                width: vw(21);
-                height: vw(40);
-                mask-image: url('/wp-content/themes/corpo-site/assets/img/qulmee2025/school/next.svg');
-                mask-repeat: no-repeat;
-                mask-size: contain;
-                background-color: #AFDDFF;
-                position: absolute;
-                right: -100%;
-            }
+  }
+  .more-wrap {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    a.more {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      color: #49b2f4;
+      &:hover {
+        opacity: 0.7;
+      }
+      @include mq {
+        font-size: vw(14);
+      }
+      &::after {
+        content: "";
+        display: inline-block;
+        margin-left: 20px;
+        width: 11px;
+        height: 16px;
+        mask-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/school/more.svg");
+        mask-repeat: no-repeat;
+        mask-size: contain;
+        background-color: #49b2f4;
+        @include mq {
+          width: vw(12);
+          height: vw(18);
         }
+      }
     }
-    .swiper-button-prev{
-        display: none;
-        @media(max-width: 1024px) {
-            display: block;
-            &:after{
-                content: "";
-                display: inline-block;
-                width: vw(21);
-                height: vw(40);
-                mask-image: url('/wp-content/themes/corpo-site/assets/img/qulmee2025/school/prev.svg');
-                mask-repeat: no-repeat;
-                mask-size: contain;
-                background-color: #AFDDFF;
-                position: absolute;
-                left: -100%;
-            }
-        }
+  }
+  //スライダー
+  .swiper-slide {
+    height: auto !important;
+  }
+  .swiper {
+    overflow: visible;
+  }
+  .swiper-button-next {
+    display: none;
+    @media (max-width: 1024px) {
+      display: block;
+      &:after {
+        content: "";
+        display: inline-block;
+        width: vw(21);
+        height: vw(40);
+        mask-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/school/next.svg");
+        mask-repeat: no-repeat;
+        mask-size: contain;
+        background-color: #afddff;
+        position: absolute;
+        right: -100%;
+      }
     }
-    .sp{
-        display: none;
-        @media(max-width:1024px){
-            display: block;
-        }   
+  }
+  .swiper-button-prev {
+    display: none;
+    @media (max-width: 1024px) {
+      display: block;
+      &:after {
+        content: "";
+        display: inline-block;
+        width: vw(21);
+        height: vw(40);
+        mask-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/school/prev.svg");
+        mask-repeat: no-repeat;
+        mask-size: contain;
+        background-color: #afddff;
+        position: absolute;
+        left: -100%;
+      }
     }
+  }
+  .sp {
+    display: none;
+    @media (max-width: 1024px) {
+      display: block;
+    }
+  }
 }

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @use "sass:math";
 
-$pathImg:"/assets/img/";
+$pathImg: "/assets/img/";
 $spDesign: 390;
 $vw: 100vw;
 @function vw($suuji) {
@@ -12,24 +12,41 @@ $vw: 100vw;
     @content;
   }
 }
-html{
+@mixin mql {
+  @media screen and (max-width: 1200px) {
+    @content;
+  }
+}
+@mixin mqm {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+html {
   scroll-behavior: smooth;
 }
 
 .qulmee {
-.qulmee-content{
-  background-color: #FFF;
-}
+  .qulmee-content {
+    background-color: #fff;
+  }
+  .footerContainer {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .wrapper.container {
+    overflow: visible;
+  }
   .qulmee-content * {
     font-family: Zen Kaku Gothic New, sans-serif;
   }
   font-weight: 500;
-  font-size: 18px;
+  font-size: clamp(16px, 1.25vw, 18px);
   color: #050000;
   @import "main";
   @import "nav";
   @import "about";
-  @import "case";
   @import "cta-mid";
   @import "cta";
   @import "faq";
@@ -39,24 +56,27 @@ html{
   @import "news";
   @import "point";
   @import "price";
-  @import "solution";
   @import "trial";
   @import "school";
-  .login{
-    @include mq{
+  .login {
+    @include mq {
       display: none;
     }
   }
-  li{
+  li {
     list-style: none;
   }
   .header {
     height: 60px;
     box-shadow: none;
-    @include mq{
-      display: none;}
+    @include mq {
+              height: 120px;
+    }
     .menuBtn {
       display: none;
+      @include mq{
+        display: block;
+      }
     }
     .gNav {
       display: none;
@@ -64,52 +84,62 @@ html{
   }
 
   h2.title {
-	text-align: center;
-	margin-bottom: 90px;
-	@include mq{
-		margin-bottom: vw(60);
-	}
+    text-align: center;
+    margin-bottom: 90px;
+
+    @include mq {
+      margin-bottom: vw(60);
+    }
     .en {
-	  margin-bottom: 30px;
+      margin-bottom: 30px;
       font-size: 26px;
       font-weight: 900;
       color: #49b2f4;
       display: block;
-	  @include mq{
-		margin-bottom: vw(15);
-		font-size: vw(20);
-	  }
-	  &::before{
-		content: "";
-		display: inline-block;
-		width: 25px;
-		height: 18px;
-		margin-right: 10px;
-		mask-image: url('/wp-content/themes/corpo-site/assets/img/qulmee2025/title-detail.svg');
-		mask-repeat: no-repeat;
-		mask-size: contain;
-		background-color: #49b2f4;
-		@include mq{
-			width: vw(25);
-			height: vw(18);
-		}
-	  }
+      @include mql {
+        font-size: 22px;
+        margin-bottom: 12px;
+      }
+      @include mq {
+        margin-bottom: vw(15);
+        font-size: vw(20);
+      }
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 25px;
+        height: 18px;
+        margin-right: 10px;
+        mask-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/title-detail.svg");
+        mask-repeat: no-repeat;
+        mask-size: contain;
+        background-color: #49b2f4;
+        @include mq {
+          width: vw(25);
+          height: vw(18);
+        }
+      }
     }
     .jp {
-		margin-bottom: 30px;
+      margin-bottom: 30px;
       font-weight: 700;
-      font-size: 44px;
+      font-size: clamp(2vw, 44px, 3.7vw);
       color: #050000;
-	  @include mq{
-		font-size: vw(26);
-	  }
+      @include mql {
+        font-size: 32px;
+      }@include mqm {
+        font-size: 24px;
+      }
+      @include mq {
+        font-size: vw(26);
+      }
     }
   }
 
   .u-button {
     display: flex;
     width: 292px;
-    padding: .7em 0;
+    padding: 0.7em 0;
     font-size: 18px;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
     border-radius: 100px;
@@ -118,24 +148,24 @@ html{
     border: 3px solid #ff9149;
     background-color: #ff9149;
     color: #fff;
-    transition: .5s;
-    &:hover{
+    transition: 0.5s;
+    &:hover {
       filter: brightness(1.2);
     }
     &.download {
       background-color: #fff;
       color: #ff9149;
     }
-    &.white{
-      border-color: #FFF;
-      background-color: #FFF;
+    &.white {
+      border-color: #fff;
+      background-color: #fff;
       color: #49b2f4;
       font-weight: bold;
     }
-    &.bd{
+    &.bd {
       background-color: transparent;
-      border-color: #FFF;
-      color: #FFF;
+      border-color: #fff;
+      color: #fff;
       font-weight: bold;
     }
   }

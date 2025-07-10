@@ -5,11 +5,18 @@ html {
 
 .qulmee {
   font-weight: 500;
-  font-size: 18px;
+  font-size: clamp(16px, 1.25vw, 18px);
   color: #050000;
 }
 .qulmee .qulmee-content {
-  background-color: #FFF;
+  background-color: #fff;
+}
+.qulmee .footerContainer {
+  width: 100%;
+  overflow: hidden;
+}
+.qulmee .wrapper.container {
+  overflow: visible;
 }
 .qulmee .qulmee-content * {
   font-family: Zen Kaku Gothic New, sans-serif;
@@ -25,7 +32,7 @@ html {
   }
 }
 .qulmee .main-block .main-inner {
-  max-width: 1400px;
+  max-width: 1500px;
   margin: 0 auto;
   width: 85%;
   position: relative;
@@ -35,10 +42,10 @@ html {
 }
 @media screen and (max-width: 767px) {
   .qulmee .main-block .main-inner {
-    padding-top: 28.7179487179vw;
+    padding-top: 10vw;
     width: 90%;
     flex-direction: column;
-    padding-bottom: 7.6923076923vw;
+    padding-bottom: 12.8205128205vw;
   }
 }
 .qulmee .main-block .main-inner .text {
@@ -144,35 +151,33 @@ html {
   max-width: 1600px;
   border-radius: 10px;
   margin: -25px auto 0 auto;
-  position: relative;
+  position: sticky;
+  top: 20px;
   z-index: 2;
   background-color: #60b5ff;
   display: flex;
-  padding: 22px 40px;
-  font-size: clamp(0.9vw, 18px, 1.2vw);
+  padding: 22px clamp(15px, 3vw, 40px);
+  font-size: clamp(0.9vw, 20px, 1.3vw);
   gap: clamp(1vw, 20px, 2vw);
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
 }
 @media screen and (max-width: 767px) {
   .qulmee .nav-qulmee {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
     font-size: 4.6153846154vw;
-    margin: 0;
-    padding: 0;
-    border-radius: 0;
+    margin: -5vw auto 0 auto;
     height: 12.0512820513vw;
+    top: 3vw;
   }
 }
 .qulmee .nav-qulmee .logo {
   padding-top: 0;
-  width: 9vw;
+  display: none;
 }
 @media screen and (max-width: 767px) {
   .qulmee .nav-qulmee .logo {
+    display: block;
     width: 28.4615384615vw;
     left: 2.8205128205vw;
   }
@@ -200,8 +205,8 @@ html {
 .qulmee .nav-qulmee .menu {
   display: flex;
   justify-content: space-between;
-  gap: 4%;
-  margin-left: auto;
+  width: 100%;
+  gap: 5%;
 }
 @media screen and (max-width: 767px) {
   .qulmee .nav-qulmee .menu {
@@ -209,8 +214,11 @@ html {
     position: absolute;
     width: 100%;
     background-color: #60b5ff;
-    top: 11vw;
-    height: 100vh;
+    top: 10vw;
+    left: 0vw;
+    height: auto;
+    padding-bottom: 10vw;
+    border-radius: 0 0 10px 10px;
   }
   .qulmee .nav-qulmee .menu.show {
     display: block;
@@ -220,7 +228,8 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 55vw;
+  gap: 3%;
+  width: 100%;
 }
 @media screen and (max-width: 767px) {
   .qulmee .nav-qulmee .menu ul {
@@ -243,7 +252,6 @@ html {
 }
 .qulmee .nav-qulmee .btns {
   display: flex;
-  width: 22vw;
   flex-shrink: 0;
   gap: 7px;
 }
@@ -267,13 +275,16 @@ html {
   }
 }
 .qulmee .about-block .inner {
-  max-width: 1400px;
+  max-width: 1500px;
   margin: 0 auto;
-  padding: 0 25px;
+  padding: 0 50px;
 }
 @media screen and (max-width: 767px) {
   .qulmee .about-block .inner {
     padding: 0 6.4102564103vw;
+  }
+  .qulmee .about-block .inner.sp-pd0 {
+    padding: 0 1vw;
   }
 }
 .qulmee .about-block .about-top {
@@ -281,7 +292,7 @@ html {
   background-color: #afddff;
   background-repeat: no-repeat;
   background-position: right bottom;
-  padding: 160px 0 115px;
+  padding: clamp(80px, 10vw, 160px) 0;
 }
 @media screen and (max-width: 767px) {
   .qulmee .about-block .about-top {
@@ -325,6 +336,11 @@ html {
   position: relative;
   border-radius: 20px;
   text-align: center;
+}
+@media screen and (max-width: 1200px) {
+  .qulmee .about-block .about-top .fig-box dl {
+    border-radius: 10px;
+  }
 }
 .qulmee .about-block .about-top .fig-box dl picture {
   width: 100%;
@@ -394,7 +410,7 @@ html {
   }
 }
 .qulmee .about-block .about-top .fig-box dl.fig1 {
-  padding: 60px 40px 30px 60px;
+  padding: clamp(20px, 4vw, 60px) clamp(20px, 3vw, 40px) clamp(20px, 4vw, 30px) clamp(20px, 3vw, 60px);
 }
 @media screen and (max-width: 767px) {
   .qulmee .about-block .about-top .fig-box dl.fig1 {
@@ -402,7 +418,7 @@ html {
   }
 }
 .qulmee .about-block .about-top .fig-box dl.fig2 {
-  padding: 60px 55px 30px 37px;
+  padding: clamp(20px, 4vw, 60px) clamp(20px, 4vw, 40px) clamp(20px, 4vw, 30px) clamp(20px, 3vw, 60px);
 }
 @media screen and (max-width: 767px) {
   .qulmee .about-block .about-top .fig-box dl.fig2 {
@@ -411,7 +427,7 @@ html {
 }
 .qulmee .about-block .about-bottom {
   background-color: #f8f8f8;
-  padding: 150px 0 180px;
+  padding: clamp(80px, 10vw, 160px) 0;
   position: relative;
 }
 @media screen and (max-width: 767px) {
@@ -499,30 +515,16 @@ html {
 }
 .qulmee .about-block .about-bottom .nayami-content {
   position: relative;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/about/logo.svg");
 }
 @media screen and (max-width: 767px) {
-  .qulmee .about-block .about-bottom .nayami-content {
-    background-image: none;
-  }
-  .qulmee .about-block .about-bottom .nayami-content:before {
-    content: "";
-    position: absolute;
-    top: 110vw;
-    left: -3.5vw;
-    width: 95vw;
-    height: 95vw;
-    background-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/about/logo.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
+  .qulmee .about-block .about-bottom .nayami-content img {
+    width: 100%;
   }
 }
 .qulmee .about-block .about-bottom .nayami-content .row {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: clamp(2vw, 50px, 3vw);
 }
 @media screen and (max-width: 767px) {
   .qulmee .about-block .about-bottom .nayami-content .row {
@@ -552,7 +554,7 @@ html {
   }
 }
 .qulmee .about-block .about-bottom .nayami-content .row.after {
-  padding-top: 160px;
+  padding-top: clamp(50px, 8vw, 160px);
 }
 @media screen and (max-width: 767px) {
   .qulmee .about-block .about-bottom .nayami-content .row.after {
@@ -608,7 +610,7 @@ html {
 .qulmee .about-block .about-bottom .nayami-content .row .items dd {
   display: flex;
   gap: 20px;
-  padding: 45px 0px 35px 45px;
+  padding: clamp(2vw, 45px, 3vw) clamp(2vw, 10px, 3vw) 35px clamp(2vw, 45px, 3vw);
   margin: 0;
   width: 100%;
 }
@@ -673,18 +675,18 @@ html {
   display: block;
   font-weight: bold;
   margin-bottom: 10px;
+  line-height: 1.4;
 }
 @media screen and (max-width: 767px) {
   .qulmee .about-block .about-bottom .nayami-content .row .items dd .text .atxt {
     font-size: 4.6153846154vw;
-    line-height: 1.4;
     text-align: left;
     width: 60%;
     margin-bottom: 0;
   }
 }
 .qulmee .about-block .about-bottom .nayami-content .row .items dd .text .atxt2 {
-  font-size: 28px;
+  font-size: clamp(1vw, 28px, 2.8vw);
   font-weight: bold;
   text-align: center;
   line-height: 1.7;
@@ -714,12 +716,21 @@ html {
 }
 .qulmee .about-block .about-swiper {
   background-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/about/bg-bottom.svg");
-  padding: 106px 50px;
+  padding: clamp(50px, 8vw, 100px) 50px;
 }
 @media screen and (max-width: 767px) {
   .qulmee .about-block .about-swiper {
     padding: 8.9743589744vw 12.8205128205vw;
   }
+}
+.qulmee .about-block .about-swiper .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+.qulmee .about-block .about-swiper .show-modal {
+  cursor: pointer;
+}
+.qulmee .about-block .about-swiper .show-modal:hover {
+  opacity: 0.8;
 }
 .qulmee .about-block .about-swiper .swiper-slide {
   width: 500px;
@@ -728,6 +739,11 @@ html {
 .qulmee .about-block .about-swiper .swiper-slide img {
   border-radius: 20px;
   overflow: hidden;
+}
+@media screen and (max-width: 1200px) {
+  .qulmee .about-block .about-swiper .swiper-slide img {
+    border-radius: 10px;
+  }
 }
 .qulmee .about-block .about-swiper .swiper-slide figcaption {
   top: -1em;
@@ -748,13 +764,46 @@ html {
     font-size: 3.5897435897vw;
   }
 }
-.qulmee .main-block {
-  color: red;
+.qulmee .modal-cont {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.qulmee .modal-cont.is-visible {
+  display: flex;
+}
+.qulmee .modal-inner {
+  padding: 20px;
+  max-width: 90%;
+  max-height: 90%;
+  position: relative;
+}
+.qulmee .close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #FFF;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  cursor: pointer;
+  color: #333;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  transition: background 0.2s ease, transform 0.2s ease;
+  z-index: 10;
 }
 .qulmee .cta-mid {
   background-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/about/bg-bottom.svg");
   text-align: center;
-  padding: 80px 25px;
+  padding: 80px 50px;
   background-size: cover;
 }
 @media screen and (max-width: 767px) {
@@ -786,7 +835,7 @@ html {
   }
 }
 .qulmee .cta-block {
-  padding: 250px 25px 120px 25px;
+  padding: clamp(90px, 20vw, 250px) 25px clamp(90px, 10vw, 120px) 25px;
   background-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/cta/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -820,6 +869,11 @@ html {
   flex-direction: column;
   align-items: center;
   font-weight: bold;
+}
+@media screen and (max-width: 1200px) {
+  .qulmee .cta-block .cta-contents .cta-group {
+    border-radius: 10px;
+  }
 }
 @media screen and (max-width: 767px) {
   .qulmee .cta-block .cta-contents .cta-group {
@@ -865,7 +919,7 @@ html {
   }
 }
 .qulmee .faq-block {
-  padding: 190px 25px;
+  padding: clamp(90px, 10vw, 180px) 50px;
   background-color: #EBF6FD;
   z-index: 2;
   position: relative;
@@ -877,7 +931,7 @@ html {
   }
 }
 .qulmee .faq-block .qa-list {
-  max-width: 1400px;
+  max-width: 1500px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -1010,7 +1064,7 @@ html {
   margin: 0;
 }
 .qulmee .flow-block {
-  padding: 220px 25px;
+  padding: clamp(90px, 10vw, 180px) 50px;
   background-color: #EBF6FD;
 }
 @media screen and (max-width: 767px) {
@@ -1019,22 +1073,36 @@ html {
   }
 }
 .qulmee .flow-block .step-ul {
-  max-width: 1400px;
+  max-width: 1500px;
   width: 100%;
   margin: 0 auto;
   display: flex;
   border-radius: 20px;
   background-color: #ffffff;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1200px) {
+  .qulmee .flow-block .step-ul {
+    border-radius: 10px;
+  }
+}
+@media screen and (max-width: 1024px) {
   .qulmee .flow-block .step-ul {
     flex-direction: column;
   }
 }
 .qulmee .flow-block .step-ul .step-li {
   flex: 1;
-  padding: 80px 3% 50px 3%;
+  padding: 80px 2.8% 50px 2.8%;
   position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (max-width: 1024px) {
+  .qulmee .flow-block .step-ul .step-li {
+    padding: 5vw 10vw 10vw;
+  }
 }
 @media screen and (max-width: 767px) {
   .qulmee .flow-block .step-ul .step-li {
@@ -1043,8 +1111,9 @@ html {
 }
 .qulmee .flow-block .step-ul .step-li .title {
   text-align: center;
-  font-size: 27px;
+  font-size: 22px;
   font-weight: 700;
+  white-space: nowrap;
 }
 @media screen and (max-width: 767px) {
   .qulmee .flow-block .step-ul .step-li .title {
@@ -1055,6 +1124,12 @@ html {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
+  display: flex;
+}
+@media screen and (max-width: 1200px) {
+  .qulmee .flow-block .step-ul .step-li .text {
+    font-size: 16px;
+  }
 }
 @media screen and (max-width: 767px) {
   .qulmee .flow-block .step-ul .step-li .text {
@@ -1068,7 +1143,7 @@ html {
   top: 0%;
   right: -6%;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
   .qulmee .flow-block .step-ul .step-li .border-img {
     display: none;
   }
@@ -1076,7 +1151,7 @@ html {
 .qulmee .flow-block .step-ul .step-li .border-sp-img {
   display: none;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
   .qulmee .flow-block .step-ul .step-li .border-sp-img {
     width: 100%;
     display: block;
@@ -1090,6 +1165,13 @@ html {
   top: -11%;
   left: 50%;
   transform: translate(-50%, 0);
+}
+@media screen and (max-width: 1024px) {
+  .qulmee .flow-block .step-ul .step-li .no01-img, .qulmee .flow-block .step-ul .step-li .no02-img, .qulmee .flow-block .step-ul .step-li .no03-img, .qulmee .flow-block .step-ul .step-li .no04-img, .qulmee .flow-block .step-ul .step-li .no05-img {
+    top: 50px;
+    left: -6%;
+    transform: translate(0, -50%);
+  }
 }
 @media screen and (max-width: 767px) {
   .qulmee .flow-block .step-ul .step-li .no01-img, .qulmee .flow-block .step-ul .step-li .no02-img, .qulmee .flow-block .step-ul .step-li .no03-img, .qulmee .flow-block .step-ul .step-li .no04-img, .qulmee .flow-block .step-ul .step-li .no05-img {
@@ -1111,7 +1193,7 @@ html {
   }
 }
 .qulmee .main-block .main-inner {
-  max-width: 1400px;
+  max-width: 1500px;
   margin: 0 auto;
   width: 85%;
   position: relative;
@@ -1121,10 +1203,10 @@ html {
 }
 @media screen and (max-width: 767px) {
   .qulmee .main-block .main-inner {
-    padding-top: 28.7179487179vw;
+    padding-top: 10vw;
     width: 90%;
     flex-direction: column;
-    padding-bottom: 7.6923076923vw;
+    padding-bottom: 12.8205128205vw;
   }
 }
 .qulmee .main-block .main-inner .text {
@@ -1254,9 +1336,9 @@ html {
   background-color: #F88F00;
 }
 .qulmee .merit-block .inner {
-  max-width: 1400px;
+  max-width: 1500px;
   margin: 0 auto;
-  padding: 170px 25px;
+  padding: 170px 50px;
   display: flex;
 }
 @media screen and (max-width: 767px) {
@@ -1282,7 +1364,7 @@ html {
   margin-bottom: 10px;
 }
 .qulmee .merit-block .inner .title img {
-  width: 100%;
+  width: 70%;
   max-width: 260px;
   margin: 30px 0 0 20px;
 }
@@ -1311,11 +1393,27 @@ html {
   border-radius: 20px;
   overflow: hidden;
 }
+@media screen and (max-width: 1200px) {
+  .qulmee .merit-block .inner .merit-list img {
+    border-radius: 10px;
+  }
+}
 .qulmee .merit-block .inner .merit-list dt {
   font-size: 26px;
   font-weight: bold;
   margin: 0.8em 0 0.6em;
   letter-spacing: -0.04em;
+  line-height: 1.4;
+}
+@media screen and (max-width: 1200px) {
+  .qulmee .merit-block .inner .merit-list dt {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .qulmee .merit-block .inner .merit-list dt {
+    font-size: 18px;
+  }
 }
 @media screen and (max-width: 767px) {
   .qulmee .merit-block .inner .merit-list dt {
@@ -1325,6 +1423,11 @@ html {
 .qulmee .merit-block .inner .merit-list dd {
   margin: 0;
   line-height: 1.7;
+}
+@media screen and (max-width: 1200px) {
+  .qulmee .merit-block .inner .merit-list dd br {
+    display: none;
+  }
 }
 @media screen and (max-width: 767px) {
   .qulmee .merit-block .inner .merit-list dd {
@@ -1337,7 +1440,7 @@ html {
   color: #888888;
 }
 .qulmee .news-block {
-  padding: 180px 25px 110px;
+  padding: clamp(90px, 10vw, 180px) 50px clamp(90px, 8vw, 180px);
   background-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/news/bg.svg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -1349,7 +1452,7 @@ html {
 }
 .qulmee .news-block .news-inner {
   display: flex;
-  max-width: 1400px;
+  max-width: 1500px;
   margin: 0 auto;
   justify-content: space-between;
 }
@@ -1432,7 +1535,7 @@ html {
   }
 }
 .qulmee .point-block {
-  padding: 170px 25px 150px;
+  padding: clamp(90px, 10vw, 180px) 50px;
   background-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/point/bg.svg");
   background-position: left top;
   background-repeat: no-repeat;
@@ -1447,7 +1550,7 @@ html {
   width: 100%;
   margin: 0 auto;
   display: grid;
-  gap: 130px;
+  gap: clamp(50px, 8vw, 130px);
 }
 @media screen and (max-width: 767px) {
   .qulmee .point-block .point-list {
@@ -1467,6 +1570,11 @@ html {
 .qulmee .point-block .point-list li .text {
   width: 53%;
 }
+@media screen and (max-width: 1300px) {
+  .qulmee .point-block .point-list li .text {
+    width: 43%;
+  }
+}
 @media screen and (max-width: 767px) {
   .qulmee .point-block .point-list li .text {
     width: 100%;
@@ -1476,6 +1584,16 @@ html {
   font-size: 30px;
   position: relative;
   margin-bottom: 0.7em;
+}
+@media screen and (max-width: 1200px) {
+  .qulmee .point-block .point-list li .text h3 {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .qulmee .point-block .point-list li .text h3 {
+    font-size: 22px;
+  }
 }
 @media screen and (max-width: 767px) {
   .qulmee .point-block .point-list li .text h3 {
@@ -1503,8 +1621,16 @@ html {
   }
 }
 .qulmee .point-block .point-list li .img {
-  width: 40%;
+  width: 52%;
   position: relative;
+  margin-right: -12%;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 1300px) {
+  .qulmee .point-block .point-list li .img {
+    margin-right: 0px;
+  }
 }
 @media screen and (max-width: 767px) {
   .qulmee .point-block .point-list li .img {
@@ -1515,11 +1641,23 @@ html {
 .qulmee .point-block .point-list li .img .ph {
   position: relative;
   z-index: 2;
+  width: clamp(200px, 35vw, 390px);
+}
+@media screen and (max-width: 1200px) {
+  .qulmee .point-block .point-list li .img .ph {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 767px) {
+  .qulmee .point-block .point-list li .img .ph {
+    width: 100%;
+  }
 }
 .qulmee .point-block .point-list li .img .num {
-  position: absolute;
-  right: -170px;
-  top: 30px;
+  right: 0px;
+  width: clamp(200px, 20vw, 265px);
+  margin-left: -14%;
 }
 @media screen and (max-width: 767px) {
   .qulmee .point-block .point-list li .img .num {
@@ -1531,20 +1669,26 @@ html {
   background-color: #e5f4ff;
   padding: clamp(3vw, 110px, 5vw);
   max-width: 1600px;
-  margin: 195px auto 0 auto;
+  margin: clamp(80px, 13vw, 195px) auto 0 auto;
   width: 100%;
   font-weight: bold;
+}
+@media screen and (max-width: 1200px) {
+  .qulmee .point-block .box {
+    border-radius: 10px;
+  }
 }
 @media screen and (max-width: 767px) {
   .qulmee .point-block .box {
     width: 100vw;
-    margin: 10.2564102564vw -6.4102564103vw;
+    margin: 25.641025641vw -6.4102564103vw 10.2564102564vw -6.4102564103vw;
     padding-bottom: 12.8205128205vw;
   }
 }
 .qulmee .point-block .box .box-top {
   display: flex;
   line-height: 1.7;
+  justify-content: space-between;
 }
 @media screen and (max-width: 767px) {
   .qulmee .point-block .box .box-top {
@@ -1555,6 +1699,11 @@ html {
   font-size: 36px;
   margin-bottom: 0.5em;
 }
+@media screen and (max-width: 1200px) {
+  .qulmee .point-block .box .box-top h3 {
+    font-size: 20px;
+  }
+}
 @media screen and (max-width: 767px) {
   .qulmee .point-block .box .box-top h3 {
     font-size: 5.1282051282vw;
@@ -1562,6 +1711,11 @@ html {
 }
 .qulmee .point-block .box .box-top .text {
   width: 40%;
+}
+@media screen and (max-width: 1100px) {
+  .qulmee .point-block .box .box-top .text {
+    width: 60%;
+  }
 }
 @media screen and (max-width: 767px) {
   .qulmee .point-block .box .box-top .text {
@@ -1573,13 +1727,19 @@ html {
   font-size: 26px;
   display: block;
 }
+@media screen and (max-width: 1200px) {
+  .qulmee .point-block .box .box-top .text strong {
+    font-size: 20px;
+  }
+}
 @media screen and (max-width: 767px) {
   .qulmee .point-block .box .box-top .text strong {
     font-size: 5.1282051282vw;
   }
 }
 .qulmee .point-block .box .box-top .img {
-  width: 60%;
+  width: 55%;
+  max-width: 757px;
 }
 @media screen and (max-width: 767px) {
   .qulmee .point-block .box .box-top .img {
@@ -1595,6 +1755,14 @@ html {
   position: relative;
   justify-content: space-between;
   align-items: center;
+}
+.qulmee .point-block .box .box-bottom .susume {
+  color: #1489d1;
+}
+@media screen and (max-width: 1200px) {
+  .qulmee .point-block .box .box-bottom {
+    border-radius: 10px;
+  }
 }
 @media (max-width: 1280px) {
   .qulmee .point-block .box .box-bottom {
@@ -1614,6 +1782,14 @@ html {
   margin: 0;
   font-size: 25px;
 }
+@media screen and (max-width: 1200px) {
+  .qulmee .point-block .box .box-bottom p {
+    font-size: 20px;
+  }
+  .qulmee .point-block .box .box-bottom p br {
+    display: none;
+  }
+}
 @media screen and (max-width: 767px) {
   .qulmee .point-block .box .box-bottom p {
     font-size: 4.6153846154vw;
@@ -1621,10 +1797,11 @@ html {
 }
 .qulmee .point-block .box .box-bottom .img {
   position: absolute;
-  bottom: 20px;
+  bottom: -20px;
   left: 5%;
   width: 20%;
   min-width: 200px;
+  max-width: 301px;
 }
 @media (max-width: 1280px) {
   .qulmee .point-block .box .box-bottom .img {
@@ -1656,7 +1833,7 @@ html {
   border-bottom: 4px solid #fff;
 }
 .qulmee .price-block {
-  padding: 215px 25px 155px 25px;
+  padding: clamp(90px, 10vw, 180px) 50px;
   font-weight: 700;
   background-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/price/bg.png");
   background-repeat: no-repeat;
@@ -1703,15 +1880,15 @@ html {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5vw;
+  gap: clamp(20px, 4vw, 60px);
 }
-@media (max-width: 1200px) {
+@media screen and (max-width: 767px) {
   .qulmee .price-block .plan-ul {
     grid-template-columns: 1fr;
   }
 }
 .qulmee .price-block .plan-ul .plan-li {
-  padding: 55px 60px;
+  padding: clamp(20px, 3vw, 55px);
   border-radius: 20px;
   border: 1px solid #C7C7C7;
   display: flex;
@@ -1719,6 +1896,11 @@ html {
   align-items: center;
   background-color: #ffffff;
   z-index: 2;
+}
+@media screen and (max-width: 1200px) {
+  .qulmee .price-block .plan-ul .plan-li {
+    border-radius: 10px;
+  }
 }
 @media screen and (max-width: 767px) {
   .qulmee .price-block .plan-ul .plan-li {
@@ -1730,6 +1912,7 @@ html {
   max-width: 374px;
   height: 54px;
   margin-bottom: 40px;
+  margin-top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1828,6 +2011,11 @@ html {
 .qulmee .price-block .plan-ul .plan-li .plan-table .td01 {
   width: 40%;
 }
+@media screen and (max-width: 1024px) {
+  .qulmee .price-block .plan-ul .plan-li .plan-table .td01 {
+    width: 15%;
+  }
+}
 @media screen and (max-width: 767px) {
   .qulmee .price-block .plan-ul .plan-li .plan-table .td01 {
     width: 100%;
@@ -1903,25 +2091,22 @@ html {
     display: none !important;
   }
 }
-.qulmee .main-block {
-  color: red;
-}
 .qulmee .trial-block {
-  padding: 120px 25px 0 25px;
+  padding: 120px 50px 0 50px;
   background-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/trial/bg.png");
   background-size: cover;
   color: #ffffff;
 }
 @media (max-width: 1024px) {
   .qulmee .trial-block {
-    padding: 120px 25px 120px 25px;
+    padding: 120px 50px 120px 50px;
   }
 }
 @media screen and (max-width: 767px) {
   .qulmee .trial-block {
     padding: 23.0769230769vw 6.4102564103vw 23.0769230769vw 6.4102564103vw;
     background-image: none;
-    background-color: #60B5FF;
+    background-color: #60b5ff;
   }
 }
 .qulmee .trial-block .trial-wrap {
@@ -1934,7 +2119,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: clamp(20px, 2vw, 50px);
   }
 }
 @media screen and (max-width: 767px) {
@@ -1962,6 +2147,8 @@ html {
     margin: 0;
     position: static;
     order: 4;
+    max-width: 600px;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1997,6 +2184,11 @@ html {
   font-weight: 700;
   line-height: 2;
 }
+@media screen and (max-width: 1200px) {
+  .qulmee .trial-block .trial-wrap .trial-contents .text {
+    font-size: 20px;
+  }
+}
 @media (max-width: 1024px) {
   .qulmee .trial-block .trial-wrap .trial-contents .text {
     padding-bottom: 45px;
@@ -2016,7 +2208,7 @@ html {
 .qulmee .trial-block .trial-wrap .trial-contents .explanation-ul {
   margin-bottom: 50px;
   display: flex;
-  gap: 80px;
+  gap: clamp(20px, 2vw, 80px);
 }
 @media screen and (max-width: 767px) {
   .qulmee .trial-block .trial-wrap .trial-contents .explanation-ul {
@@ -2060,6 +2252,11 @@ html {
   font-weight: 700;
   width: 100%;
 }
+@media screen and (max-width: 1200px) {
+  .qulmee .trial-block .trial-wrap .trial-contents .explanation-ul .explanation-li .explanation-group dd {
+    font-size: 20px;
+  }
+}
 @media screen and (max-width: 767px) {
   .qulmee .trial-block .trial-wrap .trial-contents .explanation-ul .explanation-li .explanation-group dd {
     font-size: 4.6153846154vw;
@@ -2067,6 +2264,11 @@ html {
 }
 .qulmee .trial-block .trial-wrap .trial-contents .explanation-ul .explanation-li .explanation-group dd .annotation {
   font-size: 18px;
+}
+@media screen and (max-width: 1200px) {
+  .qulmee .trial-block .trial-wrap .trial-contents .explanation-ul .explanation-li .explanation-group dd .annotation {
+    font-size: 16px;
+  }
 }
 @media screen and (max-width: 767px) {
   .qulmee .trial-block .trial-wrap .trial-contents .explanation-ul .explanation-li .explanation-group dd .annotation {
@@ -2082,17 +2284,20 @@ html {
   .qulmee .trial-block .trial-wrap .trial-contents .u-button {
     max-width: none;
     order: 5;
+    max-width: 600px;
   }
 }
 .qulmee .trial-block .trial-wrap dd {
   margin: 0;
 }
 .qulmee .school-block {
-  padding: 210px 25px;
+  padding: clamp(90px, 10vw, 180px) 50px;
   background-color: rgb(211, 211, 211);
   background-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/school/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
+  overflow: hidden;
 }
 @media screen and (max-width: 767px) {
   .qulmee .school-block {
@@ -2107,7 +2312,7 @@ html {
   margin-bottom: 25px;
   display: flex;
   justify-content: space-between;
-  gap: 5%;
+  gap: clamp(30px, 5vw, 60px);
 }
 @media (max-width: 1024px) {
   .qulmee .school-block .slider-ul {
@@ -2127,11 +2332,13 @@ html {
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: auto;
+    width: 60vw;
   }
 }
 @media screen and (max-width: 767px) {
   .qulmee .school-block .slider-ul .slider-li {
     max-width: none;
+    width: 100%;
   }
 }
 .qulmee .school-block .slider-ul .slider-li .slid-box {
@@ -2142,6 +2349,11 @@ html {
   padding: 10%;
   border-radius: 20px;
   background-color: #ffffff;
+}
+@media screen and (max-width: 1200px) {
+  .qulmee .school-block .slider-ul .slider-li .slid-box {
+    border-radius: 10px;
+  }
 }
 .qulmee .school-block .slider-ul .slider-li .slid-box:hover img {
   transform: scale(1.05);
@@ -2157,6 +2369,11 @@ html {
   border-radius: 20px;
   position: relative;
 }
+@media screen and (max-width: 1200px) {
+  .qulmee .school-block .slider-ul .slider-li .slid-box figure.slid-img {
+    border-radius: 10px;
+  }
+}
 @media screen and (max-width: 767px) {
   .qulmee .school-block .slider-ul .slider-li .slid-box figure.slid-img {
     margin-bottom: 5.1282051282vw;
@@ -2171,13 +2388,18 @@ html {
 }
 .qulmee .school-block .slider-ul .slider-li .slid-box figure.slid-img .img-text {
   padding: 10px 20px;
-  background-color: #60B5FF;
+  background-color: #60b5ff;
   color: #ffffff;
   border-radius: 0 0 20px 0;
   position: absolute;
   top: 0%;
   left: 0%;
   font-size: 15px;
+}
+@media screen and (max-width: 1200px) {
+  .qulmee .school-block .slider-ul .slider-li .slid-box figure.slid-img .img-text {
+    border-radius: 0 0 10px 0;
+  }
 }
 @media screen and (max-width: 767px) {
   .qulmee .school-block .slider-ul .slider-li .slid-box figure.slid-img .img-text {
@@ -2209,6 +2431,11 @@ html {
   font-weight: 400;
   line-height: 1.7;
 }
+@media screen and (max-width: 1200px) {
+  .qulmee .school-block .slider-ul .slider-li .slid-box .text {
+    font-size: 16px;
+  }
+}
 @media screen and (max-width: 767px) {
   .qulmee .school-block .slider-ul .slider-li .slid-box .text {
     margin-bottom: 5.1282051282vw;
@@ -2226,7 +2453,7 @@ html {
   display: flex;
   align-items: center;
   font-size: 16px;
-  color: #49B2F4;
+  color: #49b2f4;
 }
 .qulmee .school-block .more-wrap a.more:hover {
   opacity: 0.7;
@@ -2242,10 +2469,20 @@ html {
   margin-left: 20px;
   width: 11px;
   height: 16px;
+<<<<<<< HEAD
   mask-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/school/more.svg");
   mask-repeat: no-repeat;
   mask-size: contain;
   background-color: #49B2F4;
+=======
+  -webkit-mask-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/school/more.svg");
+          mask-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/school/more.svg");
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  background-color: #49b2f4;
+>>>>>>> 219815b (o)
 }
 @media screen and (max-width: 767px) {
   .qulmee .school-block .more-wrap a.more::after {
@@ -2271,10 +2508,20 @@ html {
     display: inline-block;
     width: 5.3846153846vw;
     height: 10.2564102564vw;
+<<<<<<< HEAD
     mask-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/school/next.svg");
     mask-repeat: no-repeat;
     mask-size: contain;
     background-color: #AFDDFF;
+=======
+    -webkit-mask-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/school/next.svg");
+            mask-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/school/next.svg");
+    -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+            mask-size: contain;
+    background-color: #afddff;
+>>>>>>> 219815b (o)
     position: absolute;
     right: -100%;
   }
@@ -2291,10 +2538,20 @@ html {
     display: inline-block;
     width: 5.3846153846vw;
     height: 10.2564102564vw;
+<<<<<<< HEAD
     mask-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/school/prev.svg");
     mask-repeat: no-repeat;
     mask-size: contain;
     background-color: #AFDDFF;
+=======
+    -webkit-mask-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/school/prev.svg");
+            mask-image: url("/wp-content/themes/corpo-site/assets/img/qulmee2025/school/prev.svg");
+    -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+            mask-size: contain;
+    background-color: #afddff;
+>>>>>>> 219815b (o)
     position: absolute;
     left: -100%;
   }
@@ -2321,11 +2578,16 @@ html {
 }
 @media screen and (max-width: 767px) {
   .qulmee .header {
-    display: none;
+    height: 120px;
   }
 }
 .qulmee .header .menuBtn {
   display: none;
+}
+@media screen and (max-width: 767px) {
+  .qulmee .header .menuBtn {
+    display: block;
+  }
 }
 .qulmee .header .gNav {
   display: none;
@@ -2345,6 +2607,12 @@ html {
   font-weight: 900;
   color: #49b2f4;
   display: block;
+}
+@media screen and (max-width: 1200px) {
+  .qulmee h2.title .en {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
 }
 @media screen and (max-width: 767px) {
   .qulmee h2.title .en {
@@ -2372,8 +2640,18 @@ html {
 .qulmee h2.title .jp {
   margin-bottom: 30px;
   font-weight: 700;
-  font-size: 44px;
+  font-size: clamp(2vw, 44px, 3.7vw);
   color: #050000;
+}
+@media screen and (max-width: 1200px) {
+  .qulmee h2.title .jp {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .qulmee h2.title .jp {
+    font-size: 24px;
+  }
 }
 @media screen and (max-width: 767px) {
   .qulmee h2.title .jp {
@@ -2402,14 +2680,14 @@ html {
   color: #ff9149;
 }
 .qulmee .u-button.white {
-  border-color: #FFF;
-  background-color: #FFF;
+  border-color: #fff;
+  background-color: #fff;
   color: #49b2f4;
   font-weight: bold;
 }
 .qulmee .u-button.bd {
   background-color: transparent;
-  border-color: #FFF;
-  color: #FFF;
+  border-color: #fff;
+  color: #fff;
   font-weight: bold;
 }/*# sourceMappingURL=qulmee2025.css.map */

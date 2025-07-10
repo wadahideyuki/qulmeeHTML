@@ -26,9 +26,9 @@
       }
     }
     .inner{
-        max-width: 1400px;
+        max-width: 1500px;
         margin: 0 auto;
-        padding: 170px 25px;
+        padding: 170px 50px;
         display: flex;
         @include mq{
           flex-direction: column;
@@ -48,7 +48,7 @@
               margin-bottom: 10px;
             }
             img{
-              width: 100%;
+              width: 70%;
               max-width: 260px;
               margin: 30px 0 0 20px;
               @include mq{
@@ -72,12 +72,22 @@
             img{
               border-radius: 20px;
               overflow: hidden;
+        @include mql{
+          border-radius: 10px;
+        }
             }
             dt{
               font-size: 26px;
               font-weight: bold;
               margin: .8em 0 .6em;
               letter-spacing: -0.04em;
+              line-height: 1.4;
+              @include mql{
+                font-size: 20px;
+              }
+              @include mqm{
+                font-size: 18px;
+              }
               @include mq{
                 font-size: vw(20);
               }
@@ -85,6 +95,11 @@
             dd{
               margin: 0;
               line-height: 1.7;
+              @include mql{
+                br{
+                  display: none;
+                }
+              }
               @include mq{
                 font-size: vw(16);
               }
